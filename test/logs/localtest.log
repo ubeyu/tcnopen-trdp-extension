@@ -1,0 +1,2638 @@
+TRDP Stack Version 2.0.3.0
+
+---- Start of test1 (Basic PD publish and subscribe, polling (#128 ComId = 0)) ---------
+
+received data matches (seq: 1, size: 24)
+received data matches (seq: 2, size: 24)
+received data matches (seq: 3, size: 24)
+received data matches (seq: 4, size: 24)
+received data matches (seq: 5, size: 24)
+received data matches (seq: 6, size: 24)
+received data matches (seq: 7, size: 24)
+received data matches (seq: 8, size: 24)
+received data matches (seq: 9, size: 24)
+received data matches (seq: 10, size: 24)
+received data matches (seq: 11, size: 24)
+received data matches (seq: 12, size: 24)
+received data matches (seq: 13, size: 24)
+received data matches (seq: 14, size: 24)
+received data matches (seq: 15, size: 24)
+received data matches (seq: 16, size: 24)
+received data matches (seq: 17, size: 24)
+received data matches (seq: 18, size: 24)
+received data matches (seq: 19, size: 24)
+received data matches (seq: 20, size: 24)
+received data matches (seq: 21, size: 24)
+received data matches (seq: 22, size: 24)
+received data matches (seq: 23, size: 24)
+received data matches (seq: 24, size: 24)
+received data matches (seq: 25, size: 24)
+received data matches (seq: 26, size: 24)
+received data matches (seq: 27, size: 24)
+received data matches (seq: 28, size: 24)
+received data matches (seq: 29, size: 24)
+received data matches (seq: 30, size: 24)
+received data matches (seq: 31, size: 24)
+received data matches (seq: 33, size: 24)
+received data matches (seq: 34, size: 24)
+received data matches (seq: 35, size: 24)
+received data matches (seq: 36, size: 24)
+received data matches (seq: 37, size: 24)
+received data matches (seq: 38, size: 24)
+received data matches (seq: 39, size: 24)
+received data matches (seq: 40, size: 24)
+received data matches (seq: 41, size: 24)
+received data matches (seq: 42, size: 24)
+received data matches (seq: 43, size: 24)
+received data matches (seq: 44, size: 24)
+received data matches (seq: 45, size: 24)
+received data matches (seq: 46, size: 24)
+received data matches (seq: 47, size: 24)
+received data matches (seq: 48, size: 24)
+received data matches (seq: 49, size: 24)
+received data matches (seq: 50, size: 24)
+
+-------- Cleaning up test1 ----------
+
+-----------  Success  ---------------
+--------- End of test1 --------------
+
+
+---- Start of test2 (Publish & Subscribe, Callback) ---------
+
+received data matches (seq: 1, size: 24)
+received data matches (seq: 2, size: 24)
+received data matches (seq: 3, size: 24)
+received data matches (seq: 4, size: 24)
+
+-------- Cleaning up test2 ----------
+
+-----------  Success  ---------------
+--------- End of test2 --------------
+
+
+---- Start of test3 (Ticket #140: tlp_get reports immediately TRDP_TIMEOUT_ERR) ---------
+
+..................................................
+
+-------- Cleaning up test3 ----------
+
+-----------  Success  ---------------
+--------- End of test3 --------------
+
+
+---- Start of test4 (#153 (two PDs on one pull request) ---------
+
+
+-------- Cleaning up test4 ----------
+
+-----------  Success  ---------------
+--------- End of test4 --------------
+
+
+---- Start of test5 (TCP MD Request - Reply - Confirm, #149, #160) ---------
+
+->> MD TCP Listener1 set up
+->> MD TCP Request1 sent
+14:59:31.677622  Warning: vos_sock.c:1527 connect() problem: Operation now in progress
+->> Sending reply
+->> Reply received (But it is the story of that terrible stupid catastrophe and some of its consequences.
+It is also the story of a book, a book called The HitchhikerÕs Guide to the Galaxy Ð not an Earth book, never published on Earth, and until the terrible catastrophe occurred, never seen or heard of by any Earthman.
+Nevertheless, a wholly remarkable book.
+In fact it was probably the most remarkable book ever to come out of the great publishing houses of Ursa Minor Ð of which no Earthman had ever heard either.
+Not only is it a wholly remarkable book, it is also a highly successful one Ð more popular than the Celestial Home Care Omnibus, better selling than Fifty More Things to do in Zero Gravity, and more controversial than Oolon ColluphidÕs trilogy of philosophical blockbusters Where God Went Wrong, Some More of GodÕs Greatest Mistakes and Who is this God Person Anyway?
+In many of the more relaxed civilizations on the Outer Eastern Rim of the Galaxy, the HitchhikerÕs Guide has already supplanted the great Encyclopedia Galactica as the standard repository of all knowledge and wisdom, for though it has many omissions and contains much that is apocryphal, or at least wildly inaccurate, it scores over the older, more pedestrian work in two important respects.
+First, it is slightly cheaper; and secondly it has the words DonÕt Panic inscribed in large friendly letters on its cover.
+But the story of this terrible, stupid Thursday, the story of its extraordi- nary consequences, and the story of how these consequences are inextricably intertwined with this remarkable book begins very simply.
+It begins with a house.
+)
+->> Sending confirmation
+->> Confirmation received (status = 0)
+->> MD TCP Request2 sent
+->> Sending reply
+->> Reply received (But it is the story of that terrible stupid catastrophe and some of its consequences.
+It is also the story of a book, a book called The HitchhikerÕs Guide to the Galaxy Ð not an Earth book, never published on Earth, and until the terrible catastrophe occurred, never seen or heard of by any Earthman.
+Nevertheless, a wholly remarkable book.
+In fact it was probably the most remarkable book ever to come out of the great publishing houses of Ursa Minor Ð of which no Earthman had ever heard either.
+Not only is it a wholly remarkable book, it is also a highly successful one Ð more popular than the Celestial Home Care Omnibus, better selling than Fifty More Things to do in Zero Gravity, and more controversial than Oolon ColluphidÕs trilogy of philosophical blockbusters Where God Went Wrong, Some More of GodÕs Greatest Mistakes and Who is this God Person Anyway?
+In many of the more relaxed civilizations on the Outer Eastern Rim of the Galaxy, the HitchhikerÕs Guide has already supplanted the great Encyclopedia Galactica as the standard repository of all knowledge and wisdom, for though it has many omissions and contains much that is apocryphal, or at least wildly inaccurate, it scores over the older, more pedestrian work in two important respects.
+First, it is slightly cheaper; and secondly it has the words DonÕt Panic inscribed in large friendly letters on its cover.
+But the story of this terrible, stupid Thursday, the story of its extraordi- nary consequences, and the story of how these consequences are inextricably intertwined with this remarkable book begins very simply.
+It begins with a house.
+)
+->> Sending confirmation
+->> Confirmation received (status = 0)
+
+-------- Cleaning up test5 ----------
+
+-----------  Success  ---------------
+--------- End of test5 --------------
+
+
+---- Start of test6 (UDP MD Request - Reply - Confirm, #149) ---------
+
+->> MD Listener set up
+->> MD Request sent
+->> Reply timed out (ComId 1000)
+
+-------- Cleaning up test6 ----------
+
+-----------  Success  ---------------
+--------- End of test6 --------------
+
+
+---- Start of test7 (UDP MD Notify no sessionID #127) ---------
+
+->> MD Listener set up
+->> MD Request sent
+->> Notification received, sessionID == 0
+
+-------- Cleaning up test7 ----------
+
+-----------  Success  ---------------
+--------- End of test7 --------------
+
+
+---- Start of test8 (#153 (two PDs on one pull request? Receiver only) ---------
+
+........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+-------- Cleaning up test8 ----------
+
+-----------  Success  ---------------
+--------- End of test8 --------------
+
+
+---- Start of test9 (Send and receive many telegrams, to check time optimisations) ---------
+
+
+Initialized 200 publishers & subscribers!
+
+-------- Cleaning up test9 ----------
+15:02:13.217952  Warning: tlc_if.c:242 taking mutex failed (-49)
+15:02:13.217967  Warning: tlc_if.c:988 trdp_getAccess() failed while closing session (TRDP_INUSE_ERR (Resource is in use))
+15:02:13.217973  **Error: tlc_if.c:1146 tlc_closeSession() failed (Err: -49)
+
+-----------  Success  ---------------
+--------- End of test9 --------------
+
+
+---- Start of test10 () ---------
+
+TRDP Version 2.0.3.0
+TRDP Version 2.0.3.0
+
+-------- Cleaning up test10 ----------
+
+-----------  Success  ---------------
+--------- End of test10 --------------
+
+
+---- Start of test11 (babbling idiot :-)) ---------
+
+15:02:13.465337     User: api_test.c:1549 Rec. Seq: 0 Typ: Pr
+15:02:13.465356     User: api_test.c:1550 Data: \220\363\277\357\376
+
+-------- Cleaning up test11 ----------
+
+-----------  Success  ---------------
+--------- End of test11 --------------
+
+
+---- Start of test12 (testing unsubscribe and unjoin) ---------
+
+receiving data ..
+receiving data ..
+receiving data ..
+receiving data ..
+receiving data ..
+receiving data ..
+receiving data ..
+receiving data ..
+receiving data ..
+15:02:14.689916     User: api_test.c:1691 Unsubscribing 2 should not unjoin MC 239.0.3.2!
+15:02:14.689932    Debug: trdp_utils.c:1480 Decrement the socket 11 usage = 4
+15:02:14.689938    Debug: vos_mem.c:519 vos_memFree() 0x103014000
+15:02:14.689945    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:02:14.689950    Debug: trdp_utils.c:1480 Decrement the socket 11 usage = 3
+15:02:14.689960     Info: vos_sock.c:1076 leaving MC: 239.0.3.3 on iface 10.0.3.101
+15:02:14.689977    Debug: vos_mem.c:519 vos_memFree() 0x103014600
+15:02:14.689982    Debug: vos_mem.c:519 vos_memFree() 0x102904b70
+15:02:14.689987     User: api_test.c:1699 Unsubscribing 4 should unjoin MC 239.0.3.2!
+15:02:14.689991    Debug: trdp_utils.c:1480 Decrement the socket 11 usage = 2
+15:02:14.689996     Info: vos_sock.c:1076 leaving MC: 239.0.3.2 on iface 10.0.3.101
+15:02:14.690003    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:14.690007    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:02:14.690011    Debug: trdp_utils.c:1480 Decrement the socket 11 usage = 1
+15:02:14.690366    Debug: vos_sock.c:748 vos_sockClose(11) okay
+15:02:14.690409    Debug: trdp_utils.c:1494 Closed socket 11
+15:02:14.690416    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:14.690421    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:02:14.690425    Debug: vos_mem.c:519 vos_memFree() 0x1005243a0
+15:02:14.690430     User: api_test.c:1708 Check log manually whether unjoining 239.0.3.2 occured after unsubscribing 4
+
+-------- Cleaning up test12 ----------
+
+-----------  Success  ---------------
+--------- End of test12 --------------
+
+
+---- Start of test13 (PD publish and subscribe, auto increment using new 1.4 callback function) ---------
+
+Receiving (seq: 3): Counting up: 00000003
+Receiving (seq: 9): Counting up: 00000009
+Receiving (seq: 14): Counting up: 00000014
+Receiving (seq: 19): Counting up: 00000019
+Receiving (seq: 24): Counting up: 00000024
+Receiving (seq: 29): Counting up: 00000029
+Receiving (seq: 34): Counting up: 00000034
+Receiving (seq: 39): Counting up: 00000039
+Receiving (seq: 44): Counting up: 00000044
+Receiving (seq: 49): Counting up: 00000049
+Receiving (seq: 54): Counting up: 00000054
+Receiving (seq: 59): Counting up: 00000059
+Receiving (seq: 64): Counting up: 00000064
+Receiving (seq: 69): Counting up: 00000069
+Receiving (seq: 74): Counting up: 00000074
+Receiving (seq: 79): Counting up: 00000079
+Receiving (seq: 84): Counting up: 00000084
+Receiving (seq: 89): Counting up: 00000089
+Receiving (seq: 94): Counting up: 00000094
+Receiving (seq: 99): Counting up: 00000099
+Receiving (seq: 104): Counting up: 00000104
+Receiving (seq: 109): Counting up: 00000109
+Receiving (seq: 114): Counting up: 00000114
+Receiving (seq: 119): Counting up: 00000119
+Receiving (seq: 124): Counting up: 00000124
+Receiving (seq: 129): Counting up: 00000129
+Receiving (seq: 134): Counting up: 00000134
+Receiving (seq: 139): Counting up: 00000139
+Receiving (seq: 144): Counting up: 00000144
+Receiving (seq: 149): Counting up: 00000149
+Receiving (seq: 154): Counting up: 00000154
+Receiving (seq: 159): Counting up: 00000159
+Receiving (seq: 164): Counting up: 00000164
+Receiving (seq: 169): Counting up: 00000169
+Receiving (seq: 174): Counting up: 00000174
+Receiving (seq: 179): Counting up: 00000179
+Receiving (seq: 184): Counting up: 00000184
+Receiving (seq: 189): Counting up: 00000189
+Receiving (seq: 194): Counting up: 00000194
+Receiving (seq: 200): Counting up: 00000200
+Receiving (seq: 205): Counting up: 00000205
+Receiving (seq: 210): Counting up: 00000210
+Receiving (seq: 215): Counting up: 00000215
+Receiving (seq: 220): Counting up: 00000220
+Receiving (seq: 225): Counting up: 00000225
+Receiving (seq: 230): Counting up: 00000230
+Receiving (seq: 235): Counting up: 00000235
+Receiving (seq: 240): Counting up: 00000240
+Receiving (seq: 245): Counting up: 00000245
+Receiving (seq: 250): Counting up: 00000250
+
+-------- Cleaning up test13 ----------
+
+-----------  Success  ---------------
+--------- End of test13 --------------
+
+
+---- Start of test14 (Publish & Subscribe, Callback) ---------
+
+received data matches (seq: 0, size: 24)
+received data matches (seq: 1, size: 24)
+received data matches (seq: 2, size: 24)
+received data matches (seq: 3, size: 24)
+received data matches (seq: 4, size: 24)
+received data matches (seq: 5, size: 24)
+received data matches (seq: 6, size: 24)
+received data matches (seq: 7, size: 24)
+received data matches (seq: 8, size: 24)
+received data matches (seq: 9, size: 24)
+received data matches (seq: 10, size: 24)
+11 max. expected, 11 callbacks received
+
+-------- Cleaning up test14 ----------
+
+-----------  Success  ---------------
+--------- End of test14 --------------
+
+
+---- Start of test15 (TCP MD Request - Reply - Confirm, #206) ---------
+
+15:02:41.555743     Info: vos_sock.c:246 Send buffer limit = 131072
+15:02:41.555756     Info: vos_sock.c:259 Recv buffer limit = 131072
+15:02:41.555761     Info: vos_sock.c:723 vos_sockOpenTCP: socket()=11 success
+15:02:41.555766     Info: vos_sock.c:1352 trying to bind to: 10.0.3.101:17225
+15:02:41.555783     Info: trdp_mdcom.c:2166 TCP socket opened and listening (Socket: 11, Port: 17225)
+15:02:41.555790    Debug: vos_mem.c:376 vos_memAlloc() 0x100713200, size    144
+<<- MD TCP Listener1 set up
+15:02:41.555798    Debug: vos_mem.c:376 vos_memAlloc() 0x100713800, size    264
+15:02:41.555843     Info: vos_sock.c:246 Send buffer limit = 131072
+15:02:41.555851     Info: vos_sock.c:259 Recv buffer limit = 131072
+15:02:41.555856     Info: vos_sock.c:723 vos_sockOpenTCP: socket()=12 success
+15:02:41.555859    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:41.555864    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:41.556023    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:41.556031    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:41.556036    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:41.556040    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:41.556044    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:41.556047    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:41.556053     Info: trdp_mdcom.c:256 Creating TCP MD caller session '198f0748e15311ea'
+15:02:41.556059    Debug: vos_mem.c:376 vos_memAlloc() 0x100713040, size    148
+15:02:41.556064     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request1 sent
+15:02:41.577311  Warning: vos_sock.c:1527 connect() problem: Operation now in progress
+15:02:41.577446     Info: trdp_mdcom.c:2747 Accepting new TCP connection on Socket: 13 (Port: 58026)
+15:02:41.577413     Info: trdp_mdcom.c:2283 Socket connection for TCP not ready (Socket: 12, Port: 17225)
+15:02:41.577471    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:41.577485    Debug: trdp_utils.c:125 iface[0].sock = 13
+15:02:41.577489    Debug: trdp_utils.c:126 iface[0].bindAddr = a000365
+15:02:41.577494    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:41.577497    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:41.577499    Debug: trdp_utils.c:135 iface[0].rcvMostly = 1
+15:02:41.577502    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:41.577504    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:41.598644    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:02:41.598680    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:41.598700    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:41.598710    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:41.598718     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 198f0748e15311ea Data len: 32)
+15:02:41.598726     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '198f0748e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:41.598738     Info: trdp_mdcom.c:236 Using TCP MD session '198f0748e15311ea'
+15:02:41.598744    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:41.598749    Debug: vos_mem.c:376 vos_memAlloc() 0x100524560, size    152
+15:02:41.598755     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:41.619696    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:41.619716     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:41.619748     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:41.619796    Debug: vos_mem.c:376 vos_memAlloc() 0x1007148e0, size    264
+15:02:41.619815    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:41.619824    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:41.619831    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:41.619837     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 198f0748e15311ea Data len: 33)
+15:02:41.619840    Debug: vos_mem.c:519 vos_memFree() 0x100713040
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:41.619851     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:41.619857     Info: trdp_mdcom.c:3694 Using TCP MD session '198f0748e15311ea'
+15:02:41.619860    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:41.619864    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    116
+15:02:41.619869     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:41.640876    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:41.640910     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:41.640953    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:41.640960     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:41.640982     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '198f0748e15311ea'
+15:02:41.640991    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:02:41.640997    Debug: vos_mem.c:519 vos_memFree() 0x100713800
+15:02:41.641019    Debug: vos_mem.c:376 vos_memAlloc() 0x1005248a0, size    264
+15:02:41.641027    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:41.641035    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:41.641040     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 198f0748e15311ea Data len: 0)
+15:02:41.641044    Debug: vos_mem.c:519 vos_memFree() 0x100524560
+15:02:41.641047     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:41.641269     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '198f0748e15311ea'
+15:02:41.641277    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:41.641293    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:02:42.059767    Debug: vos_mem.c:376 vos_memAlloc() 0x1005249b0, size    264
+15:02:42.059796    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:42.059803    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:42.059808    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:42.059812    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:42.059815    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:42.059819    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:42.059823    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:42.059826    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:42.059832     Info: trdp_mdcom.c:256 Creating TCP MD caller session '19dbe61ce15311ea'
+15:02:42.059837    Debug: vos_mem.c:376 vos_memAlloc() 0x100524560, size    148
+15:02:42.059843     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request1 sent
+15:02:42.059874    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:42.059894     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:42.059986    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:02:42.059999    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:42.060041    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:42.060049     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 19dbe61ce15311ea Data len: 32)
+15:02:42.060055     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '19dbe61ce15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:42.060248     Info: trdp_mdcom.c:236 Using TCP MD session '19dbe61ce15311ea'
+15:02:42.060255    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:02:42.060275    Debug: vos_mem.c:376 vos_memAlloc() 0x1005246e0, size    152
+15:02:42.060282     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:42.081366    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:42.081401     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:42.081443     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:42.081478    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:02:42.081493    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:42.081513    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:42.081525     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 19dbe61ce15311ea Data len: 33)
+15:02:42.081530    Debug: vos_mem.c:519 vos_memFree() 0x100524560
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:42.081540     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:42.081545     Info: trdp_mdcom.c:3694 Using TCP MD session '19dbe61ce15311ea'
+15:02:42.081549    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:02:42.081555    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    116
+15:02:42.081559     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:42.102091    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:42.102126     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:42.102151    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:42.102157     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:42.102192     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '19dbe61ce15311ea'
+15:02:42.102226    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:02:42.102231    Debug: vos_mem.c:519 vos_memFree() 0x1005249b0
+15:02:42.102318    Debug: vos_mem.c:376 vos_memAlloc() 0x100671c90, size    264
+15:02:42.102329    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:02:42.102336    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:42.102345     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 19dbe61ce15311ea Data len: 0)
+15:02:42.102363    Debug: vos_mem.c:519 vos_memFree() 0x1005246e0
+15:02:42.102368     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:42.102379     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '19dbe61ce15311ea'
+15:02:42.102639    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:02:42.102660    Debug: vos_mem.c:519 vos_memFree() 0x1005248a0
+15:02:42.560647    Debug: vos_mem.c:376 vos_memAlloc() 0x1005248a0, size    264
+15:02:42.560697    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:42.560710    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:42.560719    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:42.560724    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:42.560730    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:42.560733    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:42.560737    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:42.560741    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:42.560756     Info: trdp_mdcom.c:256 Creating TCP MD caller session '1a28551ae15311ea'
+15:02:42.560763    Debug: vos_mem.c:376 vos_memAlloc() 0x100713040, size    148
+15:02:42.560768     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request1 sent
+15:02:42.560908    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:42.560918     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:42.561028    Debug: vos_mem.c:376 vos_memAlloc() 0x101009600, size    1480
+15:02:42.561166    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:42.561181    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:42.561190     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 1a28551ae15311ea Data len: 32)
+15:02:42.561197     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '1a28551ae15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:42.561209     Info: trdp_mdcom.c:236 Using TCP MD session '1a28551ae15311ea'
+15:02:42.561214    Debug: vos_mem.c:519 vos_memFree() 0x101009600
+15:02:42.561219    Debug: vos_mem.c:376 vos_memAlloc() 0x100712e80, size    152
+15:02:42.561225     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:42.581940    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:42.581962     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:42.581998     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:42.582034    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:42.582046    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:42.582053    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:42.582059     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 1a28551ae15311ea Data len: 33)
+15:02:42.582065    Debug: vos_mem.c:519 vos_memFree() 0x100713040
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:42.582075     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:42.582081     Info: trdp_mdcom.c:3694 Using TCP MD session '1a28551ae15311ea'
+15:02:42.582084    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:42.582089    Debug: vos_mem.c:376 vos_memAlloc() 0x100523ee0, size    116
+15:02:42.582096     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:42.602308    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:42.602341     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:42.602368    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:42.602408    Debug: vos_mem.c:376 vos_memAlloc() 0x1005249b0, size    264
+15:02:42.602411     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:42.602419    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:42.602532    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:42.602546     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 1a28551ae15311ea Data len: 0)
+15:02:42.602553    Debug: vos_mem.c:519 vos_memFree() 0x100712e80
+15:02:42.602558     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:42.602569     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '1a28551ae15311ea'
+15:02:42.602593    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:42.602599    Debug: vos_mem.c:519 vos_memFree() 0x100671c90
+15:02:42.602615     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '1a28551ae15311ea'
+15:02:42.602748    Debug: vos_mem.c:519 vos_memFree() 0x100523ee0
+15:02:42.602783    Debug: vos_mem.c:519 vos_memFree() 0x1005248a0
+15:02:43.065846    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:02:43.065900    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:43.065917    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:43.065930    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:43.065940    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:43.065951    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:43.065961    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:43.065974    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:43.065986    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:43.066048     Info: trdp_mdcom.c:256 Creating TCP MD caller session '1a756f6ce15311ea'
+15:02:43.066061    Debug: vos_mem.c:376 vos_memAlloc() 0x100712e80, size    148
+15:02:43.066072     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request1 sent
+15:02:43.066184    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:43.066210     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:43.066322    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:43.066352    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:43.066572    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:43.066596     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 1a756f6ce15311ea Data len: 32)
+15:02:43.066607     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '1a756f6ce15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:43.066627     Info: trdp_mdcom.c:236 Using TCP MD session '1a756f6ce15311ea'
+15:02:43.066636    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:43.066648    Debug: vos_mem.c:376 vos_memAlloc() 0x1005246e0, size    152
+15:02:43.066662     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:43.087509    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:43.087534     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:43.087591     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:43.087623    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:43.087640    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:43.087650    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:43.087658     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 1a756f6ce15311ea Data len: 33)
+15:02:43.087680    Debug: vos_mem.c:519 vos_memFree() 0x100712e80
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:43.087704     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:43.087828     Info: trdp_mdcom.c:3694 Using TCP MD session '1a756f6ce15311ea'
+15:02:43.087841    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:43.087868    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    116
+15:02:43.087882     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:43.107952    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:43.107991     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:43.108075    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:43.108085     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:43.108096    Debug: vos_mem.c:376 vos_memAlloc() 0x102905280, size    264
+15:02:43.108107    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:43.108119    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:43.108128     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 1a756f6ce15311ea Data len: 0)
+15:02:43.108133    Debug: vos_mem.c:519 vos_memFree() 0x1005246e0
+15:02:43.108138     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:43.108148     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '1a756f6ce15311ea'
+15:02:43.108152    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:43.108157    Debug: vos_mem.c:519 vos_memFree() 0x1005249b0
+15:02:43.108157     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '1a756f6ce15311ea'
+15:02:43.108462    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:02:43.108470    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:02:43.571147    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:02:43.571181    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:43.571188    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:43.571193    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:43.571198    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:43.571202    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:43.571207    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:43.571211    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:43.571215    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:43.571222     Info: trdp_mdcom.c:256 Creating TCP MD caller session '1ac284c8e15311ea'
+15:02:43.571228    Debug: vos_mem.c:376 vos_memAlloc() 0x102904b70, size    148
+15:02:43.571257     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request1 sent
+15:02:43.576043    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:43.576276     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:43.576395    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:02:43.576551    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:43.576564    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:43.576594     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 1ac284c8e15311ea Data len: 32)
+15:02:43.576606     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '1ac284c8e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:43.576618     Info: trdp_mdcom.c:236 Using TCP MD session '1ac284c8e15311ea'
+15:02:43.576623    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:02:43.576630    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    152
+15:02:43.576635     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:43.597723    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:43.597755     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:43.597840    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:43.597824     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:43.597858    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:43.597870    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:43.597879     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 1ac284c8e15311ea Data len: 33)
+15:02:43.597885    Debug: vos_mem.c:519 vos_memFree() 0x102904b70
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:43.597895     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:43.597901     Info: trdp_mdcom.c:3694 Using TCP MD session '1ac284c8e15311ea'
+15:02:43.597905    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:43.597910    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    116
+15:02:43.597916     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:43.619193    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:43.619213     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:43.619270    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:43.619299     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:43.619308     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '1ac284c8e15311ea'
+15:02:43.619312    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:02:43.619320    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:02:43.619305    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:02:43.619332    Debug: vos_mem.c:376 vos_memAlloc() 0x101009600, size    1480
+15:02:43.619350    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:43.619362     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 1ac284c8e15311ea Data len: 0)
+15:02:43.619367    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:02:43.619371     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:43.619379     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '1ac284c8e15311ea'
+15:02:43.619596    Debug: vos_mem.c:519 vos_memFree() 0x101009600
+15:02:43.619618    Debug: vos_mem.c:519 vos_memFree() 0x102905280
+15:02:44.074879    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:02:44.074910    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:44.074916    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:44.074920    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:44.074924    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:44.074928    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:44.074932    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:44.074935    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:44.074939    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:44.074945     Info: trdp_mdcom.c:256 Creating TCP MD caller session '1b0f6176e15311ea'
+15:02:44.075061    Debug: vos_mem.c:376 vos_memAlloc() 0x1005246e0, size    148
+15:02:44.075075     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request1 sent
+15:02:44.076546    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:44.076568     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:44.076703    Debug: vos_mem.c:376 vos_memAlloc() 0x101009600, size    1480
+15:02:44.076741    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:44.076752    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:44.076760     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 1b0f6176e15311ea Data len: 32)
+15:02:44.076767     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '1b0f6176e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:44.076778     Info: trdp_mdcom.c:236 Using TCP MD session '1b0f6176e15311ea'
+15:02:44.076783    Debug: vos_mem.c:519 vos_memFree() 0x101009600
+15:02:44.076788    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    152
+15:02:44.076793     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:44.096845    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:44.097009     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:44.097099     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:44.097147    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:02:44.097160    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:44.097168    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:44.097176     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 1b0f6176e15311ea Data len: 33)
+15:02:44.097182    Debug: vos_mem.c:519 vos_memFree() 0x1005246e0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:44.097193     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:44.097198     Info: trdp_mdcom.c:3694 Using TCP MD session '1b0f6176e15311ea'
+15:02:44.097202    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:02:44.097337    Debug: vos_mem.c:376 vos_memAlloc() 0x100671790, size    116
+15:02:44.097346     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:44.118172    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:44.118342     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:44.119214    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:44.119839     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:44.119853     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '1b0f6176e15311ea'
+15:02:44.119859    Debug: vos_mem.c:519 vos_memFree() 0x100671790
+15:02:44.119864    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:02:44.120434    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:02:44.120595    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:44.120660    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:44.121627     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 1b0f6176e15311ea Data len: 0)
+15:02:44.121745    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:02:44.121754     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:44.121766     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '1b0f6176e15311ea'
+15:02:44.121771    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:44.121825    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:02:44.580172    Debug: vos_mem.c:376 vos_memAlloc() 0x100671c90, size    264
+15:02:44.580222    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:44.580233    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:44.580241    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:44.580248    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:44.580255    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:44.580262    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:44.580268    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:44.580274    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:44.580283     Info: trdp_mdcom.c:256 Creating TCP MD caller session '1b5c7d30e15311ea'
+15:02:44.580292    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    148
+15:02:44.580305     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request1 sent
+15:02:44.599583    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:44.599623     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:44.599737    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:44.599810    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:44.599843    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:44.599861     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 1b5c7d30e15311ea Data len: 32)
+15:02:44.599868     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '1b5c7d30e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:44.599879     Info: trdp_mdcom.c:236 Using TCP MD session '1b5c7d30e15311ea'
+15:02:44.599883    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:44.599888    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    152
+15:02:44.599893     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:44.620994    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:44.621037     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:44.621126     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:44.621162    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:44.621212    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:44.621310    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:44.621341     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 1b5c7d30e15311ea Data len: 33)
+15:02:44.621383    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:44.621413     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:44.621422     Info: trdp_mdcom.c:3694 Using TCP MD session '1b5c7d30e15311ea'
+15:02:44.621428    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:44.621459    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    116
+15:02:44.621483     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:44.641957    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:44.641982     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:44.642028    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:44.642056     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:44.642065     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '1b5c7d30e15311ea'
+15:02:44.642081    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:02:44.642105    Debug: vos_mem.c:519 vos_memFree() 0x100671c90
+15:02:44.642105    Debug: vos_mem.c:376 vos_memAlloc() 0x102905280, size    264
+15:02:44.642128    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:44.642140    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:44.642149     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 1b5c7d30e15311ea Data len: 0)
+15:02:44.642155    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:02:44.642160     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:44.642168     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '1b5c7d30e15311ea'
+15:02:44.642522    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:44.642531    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:02:45.081687    Debug: vos_mem.c:376 vos_memAlloc() 0x1005248a0, size    264
+15:02:45.081729    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:45.081739    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:45.081762    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:45.081776    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:45.081788    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:45.081800    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:45.081814    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:45.081843    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:45.081854     Info: trdp_mdcom.c:256 Creating TCP MD caller session '1ba905cee15311ea'
+15:02:45.081863    Debug: vos_mem.c:376 vos_memAlloc() 0x1005246e0, size    148
+15:02:45.081897     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request1 sent
+15:02:45.081952    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:45.081968     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:45.082066    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:45.082088    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:45.082095    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:45.082420     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 1ba905cee15311ea Data len: 32)
+15:02:45.082450     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '1ba905cee15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:45.082513     Info: trdp_mdcom.c:236 Using TCP MD session '1ba905cee15311ea'
+15:02:45.082554    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:45.082566    Debug: vos_mem.c:376 vos_memAlloc() 0x100524560, size    152
+15:02:45.082575     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:45.103820    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:45.103867     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:45.103955     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:45.103990    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:45.104085    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:45.104106    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:45.104141     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 1ba905cee15311ea Data len: 33)
+15:02:45.104158    Debug: vos_mem.c:519 vos_memFree() 0x1005246e0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:45.104173     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:45.104204     Info: trdp_mdcom.c:3694 Using TCP MD session '1ba905cee15311ea'
+15:02:45.104218    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:45.104225    Debug: vos_mem.c:376 vos_memAlloc() 0x100523ee0, size    116
+15:02:45.104231     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:45.124681    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:45.124704     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:45.124756    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:45.124779     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:45.124787    Debug: vos_mem.c:376 vos_memAlloc() 0x1005249b0, size    264
+15:02:45.124819    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:45.124819     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '1ba905cee15311ea'
+15:02:45.124853    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:45.124856    Debug: vos_mem.c:519 vos_memFree() 0x100523ee0
+15:02:45.124870     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 1ba905cee15311ea Data len: 0)
+15:02:45.124900    Debug: vos_mem.c:519 vos_memFree() 0x100524560
+15:02:45.124931    Debug: vos_mem.c:519 vos_memFree() 0x1005248a0
+15:02:45.124931     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:45.124995     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '1ba905cee15311ea'
+15:02:45.125486    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:45.125510    Debug: vos_mem.c:519 vos_memFree() 0x102905280
+15:02:45.585208    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:02:45.585242    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:45.585251    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:45.585257    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:45.585263    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:45.585268    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:45.585275    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:45.585281    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:45.585286    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:45.585294     Info: trdp_mdcom.c:256 Creating TCP MD caller session '1bf5d778e15311ea'
+15:02:45.585301    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    148
+15:02:45.585309     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request1 sent
+15:02:45.585366    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:45.585389     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:45.585497    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:45.585543    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:45.585557    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:45.585566     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 1bf5d778e15311ea Data len: 32)
+15:02:45.585573     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '1bf5d778e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:45.585880     Info: trdp_mdcom.c:236 Using TCP MD session '1bf5d778e15311ea'
+15:02:45.585898    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:45.585911    Debug: vos_mem.c:376 vos_memAlloc() 0x100524560, size    152
+15:02:45.585921     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:45.606730    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:45.606778     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:45.606852     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:45.606968    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:45.607023    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:45.607050    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:45.607065     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 1bf5d778e15311ea Data len: 33)
+15:02:45.607078    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:45.607128     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:45.607141     Info: trdp_mdcom.c:3694 Using TCP MD session '1bf5d778e15311ea'
+15:02:45.607147    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:45.607155    Debug: vos_mem.c:376 vos_memAlloc() 0x100713040, size    116
+15:02:45.607197     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:45.628137    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:45.628166     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:45.628217    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:45.628236     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:45.628242    Debug: vos_mem.c:376 vos_memAlloc() 0x102905280, size    264
+15:02:45.628246     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '1bf5d778e15311ea'
+15:02:45.628284    Debug: vos_mem.c:519 vos_memFree() 0x100713040
+15:02:45.628304    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:02:45.628304    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:45.628379    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:45.628403     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 1bf5d778e15311ea Data len: 0)
+15:02:45.628412    Debug: vos_mem.c:519 vos_memFree() 0x100524560
+15:02:45.628419     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:45.628441     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '1bf5d778e15311ea'
+15:02:45.629024    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:45.629063    Debug: vos_mem.c:519 vos_memFree() 0x1005249b0
+15:02:46.087204    Debug: vos_mem.c:376 vos_memAlloc() 0x1005248a0, size    264
+15:02:46.087239    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:46.087252    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:46.087257    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:46.087262    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:46.087267    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:46.087271    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:46.087275    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:46.087279    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:46.087285     Info: trdp_mdcom.c:256 Creating TCP MD caller session '1c42707ee15311ea'
+15:02:46.087290    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    148
+15:02:46.087296     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request1 sent
+15:02:46.107063    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:46.107101     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:46.107167    Debug: vos_mem.c:376 vos_memAlloc() 0x101009600, size    1480
+15:02:46.107203    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:46.107232    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:46.107246     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 1c42707ee15311ea Data len: 32)
+15:02:46.107262     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '1c42707ee15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:46.107298     Info: trdp_mdcom.c:236 Using TCP MD session '1c42707ee15311ea'
+15:02:46.107306    Debug: vos_mem.c:519 vos_memFree() 0x101009600
+15:02:46.107315    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    152
+15:02:46.107320     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:46.127413    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:46.127476     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:46.127617     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:46.127669    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:46.127683    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:46.128076    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:46.128414     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 1c42707ee15311ea Data len: 33)
+15:02:46.128430    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:46.128444     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:46.128479     Info: trdp_mdcom.c:3694 Using TCP MD session '1c42707ee15311ea'
+15:02:46.128807    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:46.128820    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    116
+15:02:46.128827     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:46.149266    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:46.149338     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:46.149430    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:46.149441     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:46.149449     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '1c42707ee15311ea'
+15:02:46.149476    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:02:46.149486    Debug: vos_mem.c:519 vos_memFree() 0x1005248a0
+15:02:46.149512    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:02:46.149879    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:46.149893    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:46.149902     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 1c42707ee15311ea Data len: 0)
+15:02:46.149908    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+15:02:46.150058     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:46.150077     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '1c42707ee15311ea'
+15:02:46.150083    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:46.150087    Debug: vos_mem.c:519 vos_memFree() 0x102905280
+Waiting 6s ...
+15:02:52.592867    Debug: vos_mem.c:376 vos_memAlloc() 0x100671c90, size    264
+15:02:52.592921    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:52.592930    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:52.592937    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:52.592943    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:52.592949    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:52.592955    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:52.592961    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:52.592971    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:52.592981     Info: trdp_mdcom.c:256 Creating TCP MD caller session '20232134e15311ea'
+15:02:52.593001    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    148
+15:02:52.593006     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request2 sent
+15:02:52.603527    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:52.603561     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:52.603689    Debug: vos_mem.c:376 vos_memAlloc() 0x101009600, size    1480
+15:02:52.603724    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:52.603744    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:52.603761     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 20232134e15311ea Data len: 32)
+15:02:52.603772     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '20232134e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:52.603784     Info: trdp_mdcom.c:236 Using TCP MD session '20232134e15311ea'
+15:02:52.603792    Debug: vos_mem.c:519 vos_memFree() 0x101009600
+15:02:52.603798    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    152
+15:02:52.603803     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:52.624898    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:52.624936     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:52.625007     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:52.625051    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:52.625090    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:52.625114    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:52.625134     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 20232134e15311ea Data len: 33)
+15:02:52.625151    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:52.625181     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:52.625198     Info: trdp_mdcom.c:3694 Using TCP MD session '20232134e15311ea'
+15:02:52.625212    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:52.625228    Debug: vos_mem.c:376 vos_memAlloc() 0x100523ee0, size    116
+15:02:52.625245     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:52.646378    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:52.646405     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:52.646456    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:52.646472     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:52.646483     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '20232134e15311ea'
+15:02:52.646483    Debug: vos_mem.c:376 vos_memAlloc() 0x1005248a0, size    264
+15:02:52.646507    Debug: vos_mem.c:519 vos_memFree() 0x100523ee0
+15:02:52.646512    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:52.646517    Debug: vos_mem.c:519 vos_memFree() 0x100671c90
+15:02:52.646526    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:52.646540     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 20232134e15311ea Data len: 0)
+15:02:52.646594    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:02:52.646604     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:52.646642     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '20232134e15311ea'
+15:02:52.646657    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:52.647176    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:02:53.096996    Debug: vos_mem.c:376 vos_memAlloc() 0x100671c90, size    264
+15:02:53.097033    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:53.097041    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:53.097045    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:53.097049    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:53.097056    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:53.097067    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:53.097073    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:53.097080    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:53.097091     Info: trdp_mdcom.c:256 Creating TCP MD caller session '20700d00e15311ea'
+15:02:53.097104    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    148
+15:02:53.097111     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request2 sent
+15:02:53.106626    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:53.106651     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:53.106742    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:53.106766    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:53.106792    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:53.106805     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 20700d00e15311ea Data len: 32)
+15:02:53.106816     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '20700d00e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:53.106851     Info: trdp_mdcom.c:236 Using TCP MD session '20700d00e15311ea'
+15:02:53.106867    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:53.106873    Debug: vos_mem.c:376 vos_memAlloc() 0x100712e80, size    152
+15:02:53.106878     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:53.128000    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:53.128042     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:53.128111     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:53.128165    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:53.128237    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:53.128314    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:53.128385     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 20700d00e15311ea Data len: 33)
+15:02:53.128404    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:53.128453     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:53.128476     Info: trdp_mdcom.c:3694 Using TCP MD session '20700d00e15311ea'
+15:02:53.128483    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:53.128493    Debug: vos_mem.c:376 vos_memAlloc() 0x100523ee0, size    116
+15:02:53.128504     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:53.149434    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:53.149482     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:53.149554    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:53.149589     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:53.149609     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '20700d00e15311ea'
+15:02:53.149638    Debug: vos_mem.c:519 vos_memFree() 0x100523ee0
+15:02:53.149659    Debug: vos_mem.c:519 vos_memFree() 0x100671c90
+15:02:53.149659    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:02:53.149696    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:53.149722    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:53.149738     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 20700d00e15311ea Data len: 0)
+15:02:53.149747    Debug: vos_mem.c:519 vos_memFree() 0x100712e80
+15:02:53.149757     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:53.149776     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '20700d00e15311ea'
+15:02:53.150360    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:53.150384    Debug: vos_mem.c:519 vos_memFree() 0x1005248a0
+15:02:53.600925    Debug: vos_mem.c:376 vos_memAlloc() 0x100671c90, size    264
+15:02:53.600973    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:53.600982    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:53.600990    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:53.600996    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:53.601002    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:53.601009    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:53.601014    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:53.601020    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:53.601030     Info: trdp_mdcom.c:256 Creating TCP MD caller session '20bcf21ee15311ea'
+15:02:53.601050    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    148
+15:02:53.601057     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request2 sent
+15:02:53.610896    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:53.610941     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:53.611075    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:53.611195    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:53.611221    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:53.611259     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 20bcf21ee15311ea Data len: 32)
+15:02:53.611288     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '20bcf21ee15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:53.611310     Info: trdp_mdcom.c:236 Using TCP MD session '20bcf21ee15311ea'
+15:02:53.611347    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:53.611371    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    152
+15:02:53.611380     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:53.632546    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:53.632587     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:53.632659     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:53.632712    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:53.632780    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:53.632810    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:53.632864     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 20bcf21ee15311ea Data len: 33)
+15:02:53.632884    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:53.632935     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:53.632947     Info: trdp_mdcom.c:3694 Using TCP MD session '20bcf21ee15311ea'
+15:02:53.632953    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:53.632992    Debug: vos_mem.c:376 vos_memAlloc() 0x100523ee0, size    116
+15:02:53.633010     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:53.653978    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:53.654025     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:53.654098    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:53.654131     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:53.654141    Debug: vos_mem.c:376 vos_memAlloc() 0x102905280, size    264
+15:02:53.654152     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '20bcf21ee15311ea'
+15:02:53.654204    Debug: vos_mem.c:519 vos_memFree() 0x100523ee0
+15:02:53.654217    Debug: vos_mem.c:519 vos_memFree() 0x100671c90
+15:02:53.654217    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:02:53.654273    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:53.654323     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 20bcf21ee15311ea Data len: 0)
+15:02:53.654365    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:02:53.654374     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:53.654390     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '20bcf21ee15311ea'
+15:02:53.654914    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:02:53.654940    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:02:54.103769    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:02:54.103817    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:54.103827    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:54.103836    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:54.103844    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:54.103851    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:54.103861    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:54.103871    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:54.103877    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:54.103886     Info: trdp_mdcom.c:256 Creating TCP MD caller session '2109aceee15311ea'
+15:02:54.103895    Debug: vos_mem.c:376 vos_memAlloc() 0x100712e80, size    148
+15:02:54.103905     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request2 sent
+15:02:54.109625    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:54.109686     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:54.109809    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:54.109871    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:54.109911    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:54.109926     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 2109aceee15311ea Data len: 32)
+15:02:54.109956     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '2109aceee15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:54.109978     Info: trdp_mdcom.c:236 Using TCP MD session '2109aceee15311ea'
+15:02:54.109984    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:54.110012    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    152
+15:02:54.110027     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:54.131042    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:54.131085     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:54.131152     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:54.131206    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:54.131319    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:54.131372    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:54.131397     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 2109aceee15311ea Data len: 33)
+15:02:54.131408    Debug: vos_mem.c:519 vos_memFree() 0x100712e80
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:54.131425     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:54.131459     Info: trdp_mdcom.c:3694 Using TCP MD session '2109aceee15311ea'
+15:02:54.131485    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:54.131496    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    116
+15:02:54.131505     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:54.152605    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:54.152645     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:54.152702    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:54.152774    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:02:54.152794    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:54.152774     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:54.152816    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:54.152833     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '2109aceee15311ea'
+15:02:54.152844    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:02:54.152858    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:02:54.152858     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 2109aceee15311ea Data len: 0)
+15:02:54.152914    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:02:54.152931     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:54.152955     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '2109aceee15311ea'
+15:02:54.153396    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:54.153426    Debug: vos_mem.c:519 vos_memFree() 0x102905280
+15:02:54.604074    Debug: vos_mem.c:376 vos_memAlloc() 0x100671c90, size    264
+15:02:54.604129    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:54.604146    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:54.604155    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:54.604161    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:54.604166    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:54.604172    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:54.604180    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:54.604193    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:54.604203     Info: trdp_mdcom.c:256 Creating TCP MD caller session '21560490e15311ea'
+15:02:54.604212    Debug: vos_mem.c:376 vos_memAlloc() 0x100524560, size    148
+15:02:54.604220     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request2 sent
+15:02:54.613278    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:54.613311     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:54.613445    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:54.613529    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:54.613583    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:54.613615     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 21560490e15311ea Data len: 32)
+15:02:54.613630     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '21560490e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:54.613652     Info: trdp_mdcom.c:236 Using TCP MD session '21560490e15311ea'
+15:02:54.613661    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:54.613671    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    152
+15:02:54.613679     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:54.634814    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:54.634847     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:54.634899     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:54.634940    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:54.634963    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:54.635007    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:54.635058     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 21560490e15311ea Data len: 33)
+15:02:54.635145    Debug: vos_mem.c:519 vos_memFree() 0x100524560
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:54.635225     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:54.635240     Info: trdp_mdcom.c:3694 Using TCP MD session '21560490e15311ea'
+15:02:54.635247    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:54.635257    Debug: vos_mem.c:376 vos_memAlloc() 0x100523ee0, size    116
+15:02:54.635265     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:54.656207    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:54.656249     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:54.656323    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:54.656356     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:54.656368    Debug: vos_mem.c:376 vos_memAlloc() 0x102905280, size    264
+15:02:54.656448     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '21560490e15311ea'
+15:02:54.656477    Debug: vos_mem.c:519 vos_memFree() 0x100523ee0
+15:02:54.656492    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:54.656538    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:54.656562    Debug: vos_mem.c:519 vos_memFree() 0x100671c90
+15:02:54.656562     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 21560490e15311ea Data len: 0)
+15:02:54.656650    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+15:02:54.656662     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:54.656684     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '21560490e15311ea'
+15:02:54.657151    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:54.657185    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:02:55.106474    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:02:55.106517    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:55.106522    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:55.106526    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:55.106529    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:55.106532    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:55.106535    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:55.106538    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:55.106541    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:55.106546     Info: trdp_mdcom.c:256 Creating TCP MD caller session '21a2ab6ae15311ea'
+15:02:55.106550    Debug: vos_mem.c:376 vos_memAlloc() 0x100712e80, size    148
+15:02:55.106554     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request2 sent
+15:02:55.115442    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:55.115484     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:55.115623    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:55.115734    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:55.115755    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:55.115795     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 21a2ab6ae15311ea Data len: 32)
+15:02:55.115807     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '21a2ab6ae15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:55.115845     Info: trdp_mdcom.c:236 Using TCP MD session '21a2ab6ae15311ea'
+15:02:55.115857    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:55.115864    Debug: vos_mem.c:376 vos_memAlloc() 0x100524560, size    152
+15:02:55.115870     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:55.136709    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:55.136742     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:55.136781     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:55.136849    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:55.136861    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:55.136869    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:55.136877     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 21a2ab6ae15311ea Data len: 33)
+15:02:55.136939    Debug: vos_mem.c:519 vos_memFree() 0x100712e80
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:55.136956     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:55.136965     Info: trdp_mdcom.c:3694 Using TCP MD session '21a2ab6ae15311ea'
+15:02:55.136970    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:55.136976    Debug: vos_mem.c:376 vos_memAlloc() 0x100523ee0, size    116
+15:02:55.136984     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:55.157413    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:55.157442     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:55.157490    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:55.157500     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:55.157555     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '21a2ab6ae15311ea'
+15:02:55.157565    Debug: vos_mem.c:519 vos_memFree() 0x100523ee0
+15:02:55.157572    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:02:55.157646    Debug: vos_mem.c:376 vos_memAlloc() 0x1005248a0, size    264
+15:02:55.157656    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:55.157670    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:55.157682     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 21a2ab6ae15311ea Data len: 0)
+15:02:55.157688    Debug: vos_mem.c:519 vos_memFree() 0x100524560
+15:02:55.157694     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:55.157714     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '21a2ab6ae15311ea'
+15:02:55.158113    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:55.158126    Debug: vos_mem.c:519 vos_memFree() 0x102905280
+15:02:55.611360    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:02:55.611408    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:55.611417    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:55.611424    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:55.611430    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:55.611436    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:55.611442    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:55.611448    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:55.611454    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:55.611465     Info: trdp_mdcom.c:256 Creating TCP MD caller session '21efb6c6e15311ea'
+15:02:55.611474    Debug: vos_mem.c:376 vos_memAlloc() 0x100712e80, size    148
+15:02:55.611484     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request2 sent
+15:02:55.617068    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:55.617110     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:55.617241    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:55.617305    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:55.617355    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:55.617387     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 21efb6c6e15311ea Data len: 32)
+15:02:55.617403     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '21efb6c6e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:55.617458     Info: trdp_mdcom.c:236 Using TCP MD session '21efb6c6e15311ea'
+15:02:55.617470    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:55.617479    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    152
+15:02:55.617509     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:55.638778    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:55.638818     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:55.638888     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:55.638941    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:55.639017    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:55.639079    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:55.639111     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 21efb6c6e15311ea Data len: 33)
+15:02:55.639153    Debug: vos_mem.c:519 vos_memFree() 0x100712e80
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:55.639178     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:55.639188     Info: trdp_mdcom.c:3694 Using TCP MD session '21efb6c6e15311ea'
+15:02:55.639230    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:55.639244    Debug: vos_mem.c:376 vos_memAlloc() 0x100523ee0, size    116
+15:02:55.639254     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:55.660219    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:55.660292     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:55.660505    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:55.660532    Debug: vos_mem.c:376 vos_memAlloc() 0x1005249b0, size    264
+15:02:55.660570    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:55.660570     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:55.660626    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:55.660626     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '21efb6c6e15311ea'
+15:02:55.660758     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 21efb6c6e15311ea Data len: 0)
+15:02:55.660793    Debug: vos_mem.c:519 vos_memFree() 0x100523ee0
+15:02:55.660817    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+15:02:55.660834    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:02:55.660834     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:55.661144     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '21efb6c6e15311ea'
+15:02:55.661166    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:55.661177    Debug: vos_mem.c:519 vos_memFree() 0x1005248a0
+15:02:56.116697    Debug: vos_mem.c:376 vos_memAlloc() 0x1005248a0, size    264
+15:02:56.116753    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:56.116764    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:56.116771    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:56.116792    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:56.116796    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:56.116799    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:56.116803    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:56.116806    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:56.116812     Info: trdp_mdcom.c:256 Creating TCP MD caller session '223cd2e4e15311ea'
+15:02:56.116817    Debug: vos_mem.c:376 vos_memAlloc() 0x100524560, size    148
+15:02:56.116822     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request2 sent
+15:02:56.122108    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:56.122137     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:56.122234    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:56.122326    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:56.122344    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:56.122388     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 223cd2e4e15311ea Data len: 32)
+15:02:56.122400     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '223cd2e4e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:56.122440     Info: trdp_mdcom.c:236 Using TCP MD session '223cd2e4e15311ea'
+15:02:56.122450    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:56.122457    Debug: vos_mem.c:376 vos_memAlloc() 0x1005246e0, size    152
+15:02:56.122462     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:56.143496    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:56.143535     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:56.143601     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:56.143655    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:56.143733    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:56.143795    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:56.143827     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 223cd2e4e15311ea Data len: 33)
+15:02:56.143866    Debug: vos_mem.c:519 vos_memFree() 0x100524560
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:56.143896     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:56.143905     Info: trdp_mdcom.c:3694 Using TCP MD session '223cd2e4e15311ea'
+15:02:56.143939    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:56.143956    Debug: vos_mem.c:376 vos_memAlloc() 0x100523ee0, size    116
+15:02:56.143974     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:56.165078    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:56.165139     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:56.165212    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:56.165227     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:56.165297    Debug: vos_mem.c:376 vos_memAlloc() 0x100524ac0, size    264
+15:02:56.165272     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '223cd2e4e15311ea'
+15:02:56.165317    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:56.165331    Debug: vos_mem.c:519 vos_memFree() 0x100523ee0
+15:02:56.165351    Debug: vos_mem.c:519 vos_memFree() 0x1005248a0
+15:02:56.165355    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:56.165377     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 223cd2e4e15311ea Data len: 0)
+15:02:56.165389    Debug: vos_mem.c:519 vos_memFree() 0x1005246e0
+15:02:56.165398     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:56.165783     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '223cd2e4e15311ea'
+15:02:56.165804    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:56.165811    Debug: vos_mem.c:519 vos_memFree() 0x1005249b0
+15:02:56.621244    Debug: vos_mem.c:376 vos_memAlloc() 0x100671c90, size    264
+15:02:56.621302    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:56.621314    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:56.621321    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:56.621328    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:56.621338    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:56.621345    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:56.621351    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:56.621356    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:56.621367     Info: trdp_mdcom.c:256 Creating TCP MD caller session '2289cffee15311ea'
+15:02:56.621380    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    148
+15:02:56.621396     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request2 sent
+15:02:56.621475    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:56.621490     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:56.621627    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:56.621735    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:56.621798    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:56.621816     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 2289cffee15311ea Data len: 32)
+15:02:56.622188     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '2289cffee15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:56.622221     Info: trdp_mdcom.c:236 Using TCP MD session '2289cffee15311ea'
+15:02:56.622235    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:56.622247    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    152
+15:02:56.622287     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:56.643533    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:56.643576     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:56.643652     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:56.643702    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:56.643787    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:56.643849    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:56.643924     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 2289cffee15311ea Data len: 33)
+15:02:56.643941    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:56.643958     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:56.643988     Info: trdp_mdcom.c:3694 Using TCP MD session '2289cffee15311ea'
+15:02:56.644013    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:56.644027    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    116
+15:02:56.644037     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:56.664983    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:56.665026     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:56.665103    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:56.665134     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:56.665143    Debug: vos_mem.c:376 vos_memAlloc() 0x1005248a0, size    264
+15:02:56.665156     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '2289cffee15311ea'
+15:02:56.665207    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:02:56.665220    Debug: vos_mem.c:519 vos_memFree() 0x100671c90
+15:02:56.665222    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:56.665270    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:56.665293     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 2289cffee15311ea Data len: 0)
+15:02:56.665381    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:02:56.665406     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:56.665465     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '2289cffee15311ea'
+15:02:56.665901    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:56.665935    Debug: vos_mem.c:519 vos_memFree() 0x100524ac0
+15:02:57.125551    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:02:57.125601    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:57.125610    Debug: trdp_utils.c:125 iface[0].sock = 12
+15:02:57.125617    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:57.125622    Debug: trdp_utils.c:129 iface[0].type = MD_TCP
+15:02:57.125629    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:57.125635    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:57.125640    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:57.125647    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:57.125657     Info: trdp_mdcom.c:256 Creating TCP MD caller session '22d6c2dce15311ea'
+15:02:57.125666    Debug: vos_mem.c:376 vos_memAlloc() 0x100712e80, size    148
+15:02:57.125675     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD TCP Request2 sent
+15:02:57.142794    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:57.142834     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:57.142961    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:57.143042    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:57.143108    Debug: vos_sock.c:1657 received 32 bytes (Socket: 13)
+15:02:57.143129     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mr' UUID: 22d6c2dce15311ea Data len: 32)
+15:02:57.143172     Info: trdp_mdcom.c:1755 Creating TCP MD replier session '22d6c2dce15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:57.143204     Info: trdp_mdcom.c:236 Using TCP MD session '22d6c2dce15311ea'
+15:02:57.143242    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:57.143263    Debug: vos_mem.c:376 vos_memAlloc() 0x1005246e0, size    152
+15:02:57.143275     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:57.164027    Debug: vos_sock.c:1541 connect() 13: Socket is already connected
+15:02:57.164067     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 13, Port: 17225)
+15:02:57.164131     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:57.164187    Debug: vos_mem.c:376 vos_memAlloc() 0x102002400, size    1480
+15:02:57.164213    Debug: vos_sock.c:1657 received 116 bytes (Socket: 12)
+15:02:57.164231    Debug: vos_sock.c:1657 received 36 bytes (Socket: 12)
+15:02:57.164250     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mq' UUID: 22d6c2dce15311ea Data len: 33)
+15:02:57.164262    Debug: vos_mem.c:519 vos_memFree() 0x100712e80
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:57.164284     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:57.164295     Info: trdp_mdcom.c:3694 Using TCP MD session '22d6c2dce15311ea'
+15:02:57.164304    Debug: vos_mem.c:519 vos_memFree() 0x102002400
+15:02:57.164316    Debug: vos_mem.c:376 vos_memAlloc() 0x100523ee0, size    116
+15:02:57.164327     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:57.185431    Debug: vos_sock.c:1541 connect() 12: Socket is already connected
+15:02:57.185507     Info: trdp_mdcom.c:2276 Opened TCP connection to 10.0.3.101 (Socket: 12, Port: 17225)
+15:02:57.185605    Debug: trdp_utils.c:1526 Decrement the socket 12 usage = 1
+15:02:57.185624     Info: trdp_utils.c:1539 The Socket (Num = 12 usage=0) ConnectionTimeout will be started
+15:02:57.185692     Info: trdp_mdcom.c:743 Freeing TCP MD caller session '22d6c2dce15311ea'
+15:02:57.185720    Debug: vos_mem.c:519 vos_memFree() 0x100523ee0
+15:02:57.185735    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:02:57.185760    Debug: vos_mem.c:376 vos_memAlloc() 0x1005249b0, size    264
+15:02:57.185799    Debug: vos_mem.c:376 vos_memAlloc() 0x101009600, size    1480
+15:02:57.185823    Debug: vos_sock.c:1657 received 116 bytes (Socket: 13)
+15:02:57.185838     Info: trdp_mdcom.c:2037 Received TCP MD packet (type: 'Mc' UUID: 22d6c2dce15311ea Data len: 0)
+15:02:57.185846    Debug: vos_mem.c:519 vos_memFree() 0x1005246e0
+15:02:57.185853     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:57.186260     Info: trdp_mdcom.c:769 Freeing MD TCP replier session '22d6c2dce15311ea'
+15:02:57.186290    Debug: vos_mem.c:519 vos_memFree() 0x101009600
+15:02:57.186334    Debug: vos_mem.c:519 vos_memFree() 0x1005248a0
+15:02:57.630240    Debug: vos_mem.c:519 vos_memFree() 0x100713200
+
+-------- Cleaning up test15 ----------
+
+-----------  Success  ---------------
+--------- End of test15 --------------
+
+
+---- Start of test16 (UDP MD Request - Reply - Confirm, #206) ---------
+
+15:02:57.834211    Debug: vos_mem.c:376 vos_memAlloc() 0x100523960, size    144
+15:02:57.834312     Info: vos_sock.c:246 Send buffer limit = 65536
+15:02:57.834321     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:02:57.834327    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=11 success
+15:02:57.834334     Info: vos_sock.c:1352 trying to bind to: 10.0.3.101:17225
+15:02:57.834348    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:57.834354    Debug: trdp_utils.c:125 iface[0].sock = 11
+15:02:57.834359    Debug: trdp_utils.c:126 iface[0].bindAddr = a000365
+15:02:57.834363    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:02:57.834368    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:57.834372    Debug: trdp_utils.c:135 iface[0].rcvMostly = 1
+15:02:57.834376    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:57.834380    Debug: trdp_utils.c:138 ----------------------------
+
+->> MD UDP Listener1 set up
+15:02:57.834388    Debug: vos_mem.c:376 vos_memAlloc() 0x100524c00, size    264
+15:02:57.834452     Info: vos_sock.c:246 Send buffer limit = 65536
+15:02:57.834504     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:02:57.834574    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:02:57.834593     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:02:57.834619    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:57.834623    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:02:57.834626    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:57.834629    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:02:57.834631    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:57.834634    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:57.834638    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:57.834642    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:57.834659     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2342f24ae15311ea'
+15:02:57.834664    Debug: vos_mem.c:376 vos_memAlloc() 0x100714040, size    148
+15:02:57.834668     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request1 sent
+15:02:57.855785    Debug: vos_mem.c:376 vos_memAlloc() 0x100524d10, size    264
+15:02:57.855829    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:02:57.855884     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2342f24ae15311ea Data len: 32)
+15:02:57.855901     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2342f24ae15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:57.855929     Info: trdp_mdcom.c:236 Using UDP MD session '2342f24ae15311ea'
+15:02:57.855942    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:02:57.855957    Debug: vos_mem.c:376 vos_memAlloc() 0x1005237a0, size    152
+15:02:57.855972     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:57.876236     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:57.876306    Debug: vos_mem.c:376 vos_memAlloc() 0x100671c90, size    264
+15:02:57.876347    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:57.876397     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2342f24ae15311ea Data len: 33)
+15:02:57.876409    Debug: vos_mem.c:519 vos_memFree() 0x100714040
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:57.876427     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:57.876434     Info: trdp_mdcom.c:3694 Using UDP MD session '2342f24ae15311ea'
+15:02:57.876437    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:57.876445    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    116
+15:02:57.876452     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:57.897554    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:02:57.897627    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:02:57.897767    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:02:57.897933    Debug: trdp_utils.c:1494 Closed socket 14
+15:02:57.897960     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2342f24ae15311ea'
+15:02:57.897971    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:02:57.897981    Debug: vos_mem.c:519 vos_memFree() 0x100524c00
+15:02:57.898019    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:02:57.898070     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2342f24ae15311ea Data len: 0)
+15:02:57.898084    Debug: vos_mem.c:519 vos_memFree() 0x1005237a0
+15:02:57.898092     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:57.898111     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2342f24ae15311ea'
+15:02:57.898120    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:02:57.898131    Debug: vos_mem.c:519 vos_memFree() 0x100524d10
+15:02:58.338409    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:02:58.338496     Info: vos_sock.c:246 Send buffer limit = 65536
+15:02:58.338510     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:02:58.338516    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:02:58.338525     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:02:58.338568    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:58.338580    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:02:58.338585    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:58.338588    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:02:58.338592    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:58.338595    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:58.338599    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:58.338602    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:58.338613     Info: trdp_mdcom.c:256 Creating UDP MD caller session '238fd7fee15311ea'
+15:02:58.338623    Debug: vos_mem.c:376 vos_memAlloc() 0x100714040, size    148
+15:02:58.338630     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request1 sent
+15:02:58.355826    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:02:58.355905     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 238fd7fee15311ea Data len: 32)
+15:02:58.355921     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '238fd7fee15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:58.355946     Info: trdp_mdcom.c:236 Using UDP MD session '238fd7fee15311ea'
+15:02:58.355956    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:02:58.355970    Debug: vos_mem.c:376 vos_memAlloc() 0x100714200, size    152
+15:02:58.355979     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:58.377174     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:58.377247    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:58.377362     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 238fd7fee15311ea Data len: 33)
+15:02:58.377395    Debug: vos_mem.c:519 vos_memFree() 0x100714040
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:58.377410     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:58.377417     Info: trdp_mdcom.c:3694 Using UDP MD session '238fd7fee15311ea'
+15:02:58.377420    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:58.377426    Debug: vos_mem.c:376 vos_memAlloc() 0x1005235e0, size    116
+15:02:58.377434     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:58.397564    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:02:58.397686    Debug: vos_mem.c:376 vos_memAlloc() 0x100524c00, size    264
+15:02:58.397870    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:02:58.397946     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 238fd7fee15311ea Data len: 0)
+15:02:58.397966    Debug: vos_mem.c:519 vos_memFree() 0x100714200
+15:02:58.397982     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:58.398012     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '238fd7fee15311ea'
+15:02:58.398208    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:02:58.398244    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:02:58.398283    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:02:58.398299    Debug: trdp_utils.c:1494 Closed socket 14
+15:02:58.398311     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '238fd7fee15311ea'
+15:02:58.398320    Debug: vos_mem.c:519 vos_memFree() 0x1005235e0
+15:02:58.398329    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:02:58.839169    Debug: vos_mem.c:376 vos_memAlloc() 0x10066e720, size    264
+15:02:58.839307     Info: vos_sock.c:246 Send buffer limit = 65536
+15:02:58.839323     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:02:58.839332    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:02:58.839341     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:02:58.839394    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:58.839410    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:02:58.839417    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:58.839428    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:02:58.839436    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:58.839444    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:58.839451    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:58.839455    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:58.839461     Info: trdp_mdcom.c:256 Creating UDP MD caller session '23dc4468e15311ea'
+15:02:58.839467    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    148
+15:02:58.839495     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request1 sent
+15:02:58.858636    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:02:58.858683     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 23dc4468e15311ea Data len: 32)
+15:02:58.858694     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '23dc4468e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:58.858707     Info: trdp_mdcom.c:236 Using UDP MD session '23dc4468e15311ea'
+15:02:58.858712    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:02:58.858720    Debug: vos_mem.c:376 vos_memAlloc() 0x1005237a0, size    152
+15:02:58.858724     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:58.879862     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:58.879968    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:58.880099     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 23dc4468e15311ea Data len: 33)
+15:02:58.880193    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:58.880222     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:58.880231     Info: trdp_mdcom.c:3694 Using UDP MD session '23dc4468e15311ea'
+15:02:58.880237    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:58.880246    Debug: vos_mem.c:376 vos_memAlloc() 0x1005235e0, size    116
+15:02:58.880263     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:58.901248    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:02:58.901413    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:02:58.901554    Debug: trdp_utils.c:1494 Closed socket 14
+15:02:58.901582     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '23dc4468e15311ea'
+15:02:58.901725    Debug: vos_mem.c:519 vos_memFree() 0x1005235e0
+15:02:58.901757    Debug: vos_mem.c:519 vos_memFree() 0x10066e720
+15:02:58.901802    Debug: vos_mem.c:376 vos_memAlloc() 0x100524d10, size    264
+15:02:58.901827    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:58.901901     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 23dc4468e15311ea Data len: 0)
+15:02:58.901915    Debug: vos_mem.c:519 vos_memFree() 0x1005237a0
+15:02:58.901923     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:58.901946     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '23dc4468e15311ea'
+15:02:58.901959    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:58.901973    Debug: vos_mem.c:519 vos_memFree() 0x100524c00
+15:02:59.345161    Debug: vos_mem.c:376 vos_memAlloc() 0x10066e720, size    264
+15:02:59.345308     Info: vos_sock.c:246 Send buffer limit = 65536
+15:02:59.345332     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:02:59.345343    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:02:59.345362     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:02:59.345442    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:59.345465    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:02:59.345480    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:59.345491    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:02:59.345528    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:59.345541    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:59.345546    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:59.345551    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:59.345562     Info: trdp_mdcom.c:256 Creating UDP MD caller session '24297df0e15311ea'
+15:02:59.345571    Debug: vos_mem.c:376 vos_memAlloc() 0x1005237a0, size    148
+15:02:59.345587     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request1 sent
+15:02:59.359179    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:02:59.359226     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 24297df0e15311ea Data len: 32)
+15:02:59.359235     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '24297df0e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:59.359251     Info: trdp_mdcom.c:236 Using UDP MD session '24297df0e15311ea'
+15:02:59.359280    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:02:59.359370    Debug: vos_mem.c:376 vos_memAlloc() 0x1005235e0, size    152
+15:02:59.359389     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:59.380391     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:59.380493    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:02:59.380569     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 24297df0e15311ea Data len: 33)
+15:02:59.380614    Debug: vos_mem.c:519 vos_memFree() 0x1005237a0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:59.380655     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:59.380667     Info: trdp_mdcom.c:3694 Using UDP MD session '24297df0e15311ea'
+15:02:59.380670    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:02:59.380676    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    116
+15:02:59.380681     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:59.401254    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:02:59.401353    Debug: vos_mem.c:376 vos_memAlloc() 0x100524c00, size    264
+15:02:59.401424    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:02:59.401826     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 24297df0e15311ea Data len: 0)
+15:02:59.401860    Debug: vos_mem.c:519 vos_memFree() 0x1005235e0
+15:02:59.401876     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:02:59.401912     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '24297df0e15311ea'
+15:02:59.401923    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:02:59.401932    Debug: vos_mem.c:519 vos_memFree() 0x100524d10
+15:02:59.401960    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:02:59.401983    Debug: trdp_utils.c:1494 Closed socket 14
+15:02:59.401995     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '24297df0e15311ea'
+15:02:59.402006    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:02:59.402015    Debug: vos_mem.c:519 vos_memFree() 0x10066e720
+15:02:59.851136    Debug: vos_mem.c:376 vos_memAlloc() 0x10066e720, size    264
+15:02:59.851245     Info: vos_sock.c:246 Send buffer limit = 65536
+15:02:59.851260     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:02:59.851267    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:02:59.851279     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:02:59.851329    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:02:59.851350    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:02:59.851358    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:02:59.851366    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:02:59.851374    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:02:59.851398    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:02:59.851412    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:02:59.851418    Debug: trdp_utils.c:138 ----------------------------
+
+15:02:59.851428     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2476ae54e15311ea'
+15:02:59.851441    Debug: vos_mem.c:376 vos_memAlloc() 0x1005235e0, size    148
+15:02:59.851450     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request1 sent
+15:02:59.864185    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:02:59.864256     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2476ae54e15311ea Data len: 32)
+15:02:59.864269     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2476ae54e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:02:59.864306     Info: trdp_mdcom.c:236 Using UDP MD session '2476ae54e15311ea'
+15:02:59.864313    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:02:59.864321    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    152
+15:02:59.864328     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:02:59.885417     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:02:59.885518    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:02:59.885625     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2476ae54e15311ea Data len: 33)
+15:02:59.885657    Debug: vos_mem.c:519 vos_memFree() 0x1005235e0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:02:59.885689     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:02:59.885698     Info: trdp_mdcom.c:3694 Using UDP MD session '2476ae54e15311ea'
+15:02:59.885728    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:02:59.885741    Debug: vos_mem.c:376 vos_memAlloc() 0x100714040, size    116
+15:02:59.885747     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:02:59.906999    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:02:59.907102    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:02:59.907369    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:02:59.907433     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2476ae54e15311ea Data len: 0)
+15:02:59.907451    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+15:02:59.907459     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+15:02:59.907459    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:02:59.907495    Debug: trdp_utils.c:1494 Closed socket 14
+15:02:59.907514     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2476ae54e15311ea'
+15:02:59.907525    Debug: vos_mem.c:519 vos_memFree() 0x100714040
+15:02:59.907551    Debug: vos_mem.c:519 vos_memFree() 0x10066e720
+<<- Confirmation received (status = 0)
+15:02:59.907645     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2476ae54e15311ea'
+15:02:59.907662    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:02:59.907670    Debug: vos_mem.c:519 vos_memFree() 0x100524c00
+15:03:00.353306    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:03:00.353459     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:00.353485     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:00.353498    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:00.353519     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:00.353588    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:00.353606    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:00.353617    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:00.353624    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:00.353631    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:00.353638    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:00.353644    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:00.353651    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:00.353669     Info: trdp_mdcom.c:256 Creating UDP MD caller session '24c35114e15311ea'
+15:03:00.353686    Debug: vos_mem.c:376 vos_memAlloc() 0x100714200, size    148
+15:03:00.353738     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request1 sent
+15:03:00.367768    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:00.367812     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 24c35114e15311ea Data len: 32)
+15:03:00.367819     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '24c35114e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:00.367832     Info: trdp_mdcom.c:236 Using UDP MD session '24c35114e15311ea'
+15:03:00.367838    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:00.367844    Debug: vos_mem.c:376 vos_memAlloc() 0x1007143c0, size    152
+15:03:00.367852     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:00.388977     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:00.389043    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:00.389193     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 24c35114e15311ea Data len: 33)
+15:03:00.389246    Debug: vos_mem.c:519 vos_memFree() 0x100714200
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:00.389278     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:00.389287     Info: trdp_mdcom.c:3694 Using UDP MD session '24c35114e15311ea'
+15:03:00.389293    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:00.389303    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    116
+15:03:00.389311     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:00.410496    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:00.410597    Debug: vos_mem.c:376 vos_memAlloc() 0x100524c00, size    264
+15:03:00.410664    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:00.411084     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 24c35114e15311ea Data len: 0)
+15:03:00.411111    Debug: vos_mem.c:519 vos_memFree() 0x1007143c0
+15:03:00.411125     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:00.411166     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '24c35114e15311ea'
+15:03:00.411178    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:00.411178    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:00.411217    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:00.411231    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:03:00.411231     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '24c35114e15311ea'
+15:03:00.411259    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:03:00.411270    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:03:00.857140    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:03:00.857228     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:00.857237     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:00.857257    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:00.857273     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:00.857309    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:00.857325    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:00.857332    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:00.857337    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:00.857341    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:00.857346    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:00.857350    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:00.857354    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:00.857361     Info: trdp_mdcom.c:256 Creating UDP MD caller session '25102c96e15311ea'
+15:03:00.857396    Debug: vos_mem.c:376 vos_memAlloc() 0x1007143c0, size    148
+15:03:00.857404     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request1 sent
+15:03:00.871853    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:03:00.871967     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 25102c96e15311ea Data len: 32)
+15:03:00.872000     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '25102c96e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:00.872033     Info: trdp_mdcom.c:236 Using UDP MD session '25102c96e15311ea'
+15:03:00.872055    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:03:00.872080    Debug: vos_mem.c:376 vos_memAlloc() 0x1005235e0, size    152
+15:03:00.872097     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:00.892205     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:00.892270    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:00.892325     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 25102c96e15311ea Data len: 33)
+15:03:00.892339    Debug: vos_mem.c:519 vos_memFree() 0x1007143c0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:00.892359     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:00.892372     Info: trdp_mdcom.c:3694 Using UDP MD session '25102c96e15311ea'
+15:03:00.892383    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:00.892390    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    116
+15:03:00.892398     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:00.912567    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:00.912608    Debug: vos_mem.c:376 vos_memAlloc() 0x10066e720, size    264
+15:03:00.912623    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:03:00.912735    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:00.912747    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:00.912772     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '25102c96e15311ea'
+15:03:00.912779    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:03:00.912837    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:03:00.912870     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 25102c96e15311ea Data len: 0)
+15:03:00.912877    Debug: vos_mem.c:519 vos_memFree() 0x1005235e0
+15:03:00.912882     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:00.912892     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '25102c96e15311ea'
+15:03:00.912896    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:03:00.912900    Debug: vos_mem.c:519 vos_memFree() 0x100524c00
+15:03:01.360458    Debug: vos_mem.c:376 vos_memAlloc() 0x100524c00, size    264
+15:03:01.360657     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:01.360688     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:01.360709    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:01.360718     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:01.360775    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:01.360788    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:01.360792    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:01.360795    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:01.360798    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:01.360829    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:01.360839    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:01.360842    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:01.360848     Info: trdp_mdcom.c:256 Creating UDP MD caller session '255d0016e15311ea'
+15:03:01.360853    Debug: vos_mem.c:376 vos_memAlloc() 0x1005235e0, size    148
+15:03:01.360858     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request1 sent
+15:03:01.369022    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:01.369097     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 255d0016e15311ea Data len: 32)
+15:03:01.369115     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '255d0016e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:01.369137     Info: trdp_mdcom.c:236 Using UDP MD session '255d0016e15311ea'
+15:03:01.369148    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:01.369158    Debug: vos_mem.c:376 vos_memAlloc() 0x1007143c0, size    152
+15:03:01.369168     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:01.390369     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:01.390475    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:01.390626     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 255d0016e15311ea Data len: 33)
+15:03:01.390656    Debug: vos_mem.c:519 vos_memFree() 0x1005235e0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:01.390715     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:01.390731     Info: trdp_mdcom.c:3694 Using UDP MD session '255d0016e15311ea'
+15:03:01.390738    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:01.390748    Debug: vos_mem.c:376 vos_memAlloc() 0x100671ad0, size    116
+15:03:01.390792     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:01.411997    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:01.412105    Debug: vos_mem.c:376 vos_memAlloc() 0x100524d10, size    264
+15:03:01.412170    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:01.412622     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 255d0016e15311ea Data len: 0)
+15:03:01.412669    Debug: vos_mem.c:519 vos_memFree() 0x1007143c0
+15:03:01.412669    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:01.412695    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:01.412695     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:01.412709     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '255d0016e15311ea'
+15:03:01.412741     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '255d0016e15311ea'
+15:03:01.412759    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:01.412773    Debug: vos_mem.c:519 vos_memFree() 0x10066e720
+15:03:01.412773    Debug: vos_mem.c:519 vos_memFree() 0x100671ad0
+15:03:01.412840    Debug: vos_mem.c:519 vos_memFree() 0x100524c00
+15:03:01.866378    Debug: vos_mem.c:376 vos_memAlloc() 0x10066e720, size    264
+15:03:01.866512     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:01.866524     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:01.866530    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:01.866540     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:01.866584    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:01.866597    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:01.866604    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:01.866612    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:01.866620    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:01.866627    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:01.866634    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:01.866638    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:01.866645     Info: trdp_mdcom.c:256 Creating UDP MD caller session '25aa2dbee15311ea'
+15:03:01.866667    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    148
+15:03:01.866678     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request1 sent
+15:03:01.870377    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:03:01.870439     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 25aa2dbee15311ea Data len: 32)
+15:03:01.870458     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '25aa2dbee15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:01.870486     Info: trdp_mdcom.c:236 Using UDP MD session '25aa2dbee15311ea'
+15:03:01.870499    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:03:01.870551    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    152
+15:03:01.870593     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:01.891529     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:01.891627    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:01.891766     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 25aa2dbee15311ea Data len: 33)
+15:03:01.891794    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:01.891846     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:01.891859     Info: trdp_mdcom.c:3694 Using UDP MD session '25aa2dbee15311ea'
+15:03:01.891867    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:01.891884    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    116
+15:03:01.891929     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:01.912954    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:01.913065    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:03:01.913176    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:01.913375     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 25aa2dbee15311ea Data len: 0)
+15:03:01.913403    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:01.913426    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:03:01.913442    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:01.913460     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '25aa2dbee15311ea'
+15:03:01.913475    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:03:01.913484    Debug: vos_mem.c:519 vos_memFree() 0x10066e720
+15:03:01.913484     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:01.913521     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '25aa2dbee15311ea'
+15:03:01.913557    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:01.913571    Debug: vos_mem.c:519 vos_memFree() 0x100524d10
+15:03:02.370582    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:03:02.370753     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:02.370782     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:02.370794    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:02.370807     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:02.370879    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:02.370894    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:02.370905    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:02.370918    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:02.370928    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:02.370934    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:02.370941    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:02.370947    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:02.370958     Info: trdp_mdcom.c:256 Creating UDP MD caller session '25f7216ee15311ea'
+15:03:02.370973    Debug: vos_mem.c:376 vos_memAlloc() 0x1005235e0, size    148
+15:03:02.370985     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request1 sent
+15:03:02.371457    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:03:02.371500     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 25f7216ee15311ea Data len: 32)
+15:03:02.371508     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '25f7216ee15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:02.371523     Info: trdp_mdcom.c:236 Using UDP MD session '25f7216ee15311ea'
+15:03:02.371529    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:03:02.371536    Debug: vos_mem.c:376 vos_memAlloc() 0x1005237a0, size    152
+15:03:02.371541     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:02.392681     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:02.392721    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:03:02.392787     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 25f7216ee15311ea Data len: 33)
+15:03:02.392804    Debug: vos_mem.c:519 vos_memFree() 0x1005235e0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:02.392818     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:02.392825     Info: trdp_mdcom.c:3694 Using UDP MD session '25f7216ee15311ea'
+15:03:02.392831    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:03:02.392840    Debug: vos_mem.c:376 vos_memAlloc() 0x100523420, size    116
+15:03:02.392848     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:02.413199    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:02.413214    Debug: vos_mem.c:376 vos_memAlloc() 0x102905280, size    264
+15:03:02.413283    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:02.413828    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:02.413841    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:02.413848     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '25f7216ee15311ea'
+15:03:02.413853    Debug: vos_mem.c:519 vos_memFree() 0x100523420
+15:03:02.413859    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:03:02.413876     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 25f7216ee15311ea Data len: 0)
+15:03:02.413884    Debug: vos_mem.c:519 vos_memFree() 0x1005237a0
+15:03:02.413889     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:02.413900     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '25f7216ee15311ea'
+15:03:02.413905    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:02.413910    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+Waiting 6s for connection close...
+15:03:08.879253    Debug: vos_mem.c:376 vos_memAlloc() 0x10066e720, size    264
+15:03:08.879395     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:08.879409     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:08.879415    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:08.879425     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:08.879469    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:08.879482    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:08.879487    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:08.879490    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:08.879495    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:08.879498    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:08.879502    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:08.879505    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:08.879510     Info: trdp_mdcom.c:256 Creating UDP MD caller session '29d841d2e15311ea'
+15:03:08.879516    Debug: vos_mem.c:376 vos_memAlloc() 0x100671950, size    148
+15:03:08.879523     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request2 sent
+15:03:08.889012    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:03:08.889053     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 29d841d2e15311ea Data len: 32)
+15:03:08.889060     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '29d841d2e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:08.889076     Info: trdp_mdcom.c:236 Using UDP MD session '29d841d2e15311ea'
+15:03:08.889081    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:03:08.889087    Debug: vos_mem.c:376 vos_memAlloc() 0x100671ad0, size    152
+15:03:08.889093     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:08.910225     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:08.910299    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:03:08.910532     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 29d841d2e15311ea Data len: 33)
+15:03:08.910552    Debug: vos_mem.c:519 vos_memFree() 0x100671950
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:08.910589     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:08.910623     Info: trdp_mdcom.c:3694 Using UDP MD session '29d841d2e15311ea'
+15:03:08.910631    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:03:08.910641    Debug: vos_mem.c:376 vos_memAlloc() 0x100523420, size    116
+15:03:08.910649     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:08.931585    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:08.931752    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:08.931898    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:08.932146     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '29d841d2e15311ea'
+15:03:08.932179    Debug: vos_mem.c:519 vos_memFree() 0x100523420
+15:03:08.932197    Debug: vos_mem.c:519 vos_memFree() 0x10066e720
+15:03:08.931701    Debug: vos_mem.c:376 vos_memAlloc() 0x10066e1b0, size    264
+15:03:08.932273    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:08.932317     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 29d841d2e15311ea Data len: 0)
+15:03:08.932359    Debug: vos_mem.c:519 vos_memFree() 0x100671ad0
+15:03:08.932371     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:08.932392     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '29d841d2e15311ea'
+15:03:08.932399    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:08.932409    Debug: vos_mem.c:519 vos_memFree() 0x102905280
+15:03:09.380951    Debug: vos_mem.c:376 vos_memAlloc() 0x100524c00, size    264
+15:03:09.381050     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:09.381095     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:09.381101    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:09.381123     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:09.381157    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:09.381163    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:09.381168    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:09.381172    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:09.381177    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:09.381182    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:09.381186    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:09.381190    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:09.381197     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2a24ceeee15311ea'
+15:03:09.381203    Debug: vos_mem.c:376 vos_memAlloc() 0x1005237a0, size    148
+15:03:09.381209     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request2 sent
+15:03:09.392007    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:09.393408     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2a24ceeee15311ea Data len: 32)
+15:03:09.393980     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2a24ceeee15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:09.394750     Info: trdp_mdcom.c:236 Using UDP MD session '2a24ceeee15311ea'
+15:03:09.394773    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:09.394779    Debug: vos_mem.c:376 vos_memAlloc() 0x100671ad0, size    152
+15:03:09.394784     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:09.415122     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:09.415184    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:09.415227     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2a24ceeee15311ea Data len: 33)
+15:03:09.415237    Debug: vos_mem.c:519 vos_memFree() 0x1005237a0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:09.415263     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:09.415268     Info: trdp_mdcom.c:3694 Using UDP MD session '2a24ceeee15311ea'
+15:03:09.415271    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:09.415276    Debug: vos_mem.c:376 vos_memAlloc() 0x100523420, size    116
+15:03:09.415282     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:09.436439    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:09.436540    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:09.436740    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:09.436944     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2a24ceeee15311ea'
+15:03:09.436965    Debug: vos_mem.c:519 vos_memFree() 0x100523420
+15:03:09.436977    Debug: vos_mem.c:519 vos_memFree() 0x100524c00
+15:03:09.437025    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:03:09.437049    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:03:09.437129     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2a24ceeee15311ea Data len: 0)
+15:03:09.437143    Debug: vos_mem.c:519 vos_memFree() 0x100671ad0
+15:03:09.437150     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:09.437165     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2a24ceeee15311ea'
+15:03:09.437170    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:03:09.437176    Debug: vos_mem.c:519 vos_memFree() 0x10066e1b0
+15:03:09.883298    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:03:09.883412     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:09.883427     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:09.883434    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:09.883443     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:09.883486    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:09.883499    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:09.883525    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:09.883534    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:09.883540    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:09.883548    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:09.883553    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:09.883561    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:09.883572     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2a7176eae15311ea'
+15:03:09.883581    Debug: vos_mem.c:376 vos_memAlloc() 0x1007143c0, size    148
+15:03:09.883587     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request2 sent
+15:03:09.886362    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:03:09.886434     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2a7176eae15311ea Data len: 32)
+15:03:09.886455     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2a7176eae15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:09.886476     Info: trdp_mdcom.c:236 Using UDP MD session '2a7176eae15311ea'
+15:03:09.886485    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:03:09.886496    Debug: vos_mem.c:376 vos_memAlloc() 0x1005237a0, size    152
+15:03:09.886508     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:09.907590     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:09.907689    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:09.907769     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2a7176eae15311ea Data len: 33)
+15:03:09.907802    Debug: vos_mem.c:519 vos_memFree() 0x1007143c0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:09.907828     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:09.907838     Info: trdp_mdcom.c:3694 Using UDP MD session '2a7176eae15311ea'
+15:03:09.907850    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:09.907864    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    116
+15:03:09.907886     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:09.928977    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:09.929063    Debug: vos_mem.c:376 vos_memAlloc() 0x102905280, size    264
+15:03:09.929148    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:03:09.929305     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2a7176eae15311ea Data len: 0)
+15:03:09.929334    Debug: vos_mem.c:519 vos_memFree() 0x1005237a0
+15:03:09.929342     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:09.929362     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2a7176eae15311ea'
+15:03:09.929371    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:03:09.929379    Debug: vos_mem.c:519 vos_memFree() 0x102905170
+15:03:09.929411    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:09.929439    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:09.929452     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2a7176eae15311ea'
+15:03:09.929462    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:03:09.929469    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:03:10.384115    Debug: vos_mem.c:376 vos_memAlloc() 0x100524c00, size    264
+15:03:10.384197     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:10.384206     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:10.384211    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:10.384217     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:10.384272    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:10.384286    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:10.384291    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:10.384295    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:10.384298    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:10.384302    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:10.384325    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:10.384328    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:10.384332     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2abddfe4e15311ea'
+15:03:10.384335    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    148
+15:03:10.384339     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request2 sent
+15:03:10.403469    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:10.403513     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2abddfe4e15311ea Data len: 32)
+15:03:10.403543     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2abddfe4e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:10.403559     Info: trdp_mdcom.c:236 Using UDP MD session '2abddfe4e15311ea'
+15:03:10.403563    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:10.403567    Debug: vos_mem.c:376 vos_memAlloc() 0x100671ad0, size    152
+15:03:10.403573     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:10.423679    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:10.423665     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:10.423789     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2abddfe4e15311ea Data len: 33)
+15:03:10.423803    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:10.423816     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:10.423822     Info: trdp_mdcom.c:3694 Using UDP MD session '2abddfe4e15311ea'
+15:03:10.423826    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:10.423831    Debug: vos_mem.c:376 vos_memAlloc() 0x100523420, size    116
+15:03:10.423869     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:10.443953    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:10.443984    Debug: vos_mem.c:376 vos_memAlloc() 0x100524d10, size    264
+15:03:10.443992    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:03:10.444021    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:10.444099    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:10.444193     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2abddfe4e15311ea'
+15:03:10.444202    Debug: vos_mem.c:519 vos_memFree() 0x100523420
+15:03:10.444207    Debug: vos_mem.c:519 vos_memFree() 0x100524c00
+15:03:10.444217     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2abddfe4e15311ea Data len: 0)
+15:03:10.444235    Debug: vos_mem.c:519 vos_memFree() 0x100671ad0
+15:03:10.444239     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:10.444246     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2abddfe4e15311ea'
+15:03:10.444248    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:03:10.444251    Debug: vos_mem.c:519 vos_memFree() 0x102905280
+15:03:10.889290    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:03:10.889435     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:10.889453     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:10.889462    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:10.889471     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:10.889515    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:10.889528    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:10.889532    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:10.889536    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:10.889539    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:10.889565    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:10.889572    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:10.889575    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:10.889581     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2b0af82ee15311ea'
+15:03:10.889586    Debug: vos_mem.c:376 vos_memAlloc() 0x1007143c0, size    148
+15:03:10.889591     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request2 sent
+15:03:10.904637    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:03:10.904713     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2b0af82ee15311ea Data len: 32)
+15:03:10.904733     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2b0af82ee15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:10.904756     Info: trdp_mdcom.c:236 Using UDP MD session '2b0af82ee15311ea'
+15:03:10.904765    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:03:10.904776    Debug: vos_mem.c:376 vos_memAlloc() 0x100671ad0, size    152
+15:03:10.904785     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:10.925964     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:10.926071    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:10.926166     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2b0af82ee15311ea Data len: 33)
+15:03:10.926185    Debug: vos_mem.c:519 vos_memFree() 0x1007143c0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:10.926201     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:10.926206     Info: trdp_mdcom.c:3694 Using UDP MD session '2b0af82ee15311ea'
+15:03:10.926209    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:10.926216    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    116
+15:03:10.926220     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:10.946736    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:10.946886    Debug: vos_mem.c:376 vos_memAlloc() 0x10066e720, size    264
+15:03:10.947211    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:03:10.947211    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:10.947272    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:10.947282     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2b0af82ee15311ea'
+15:03:10.947289    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:03:10.947604    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:03:10.947777     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2b0af82ee15311ea Data len: 0)
+15:03:10.947787    Debug: vos_mem.c:519 vos_memFree() 0x100671ad0
+15:03:10.947791     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:10.947803     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2b0af82ee15311ea'
+15:03:10.947808    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:03:10.947812    Debug: vos_mem.c:519 vos_memFree() 0x100524d10
+15:03:11.390557    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:03:11.390653     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:11.390662     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:11.390667    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:11.390674     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:11.390710    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:11.390718    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:11.390723    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:11.390727    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:11.390732    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:11.390736    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:11.390740    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:11.390744    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:11.390752     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2b57712ce15311ea'
+15:03:11.390758    Debug: vos_mem.c:376 vos_memAlloc() 0x1007143c0, size    148
+15:03:11.390764     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request2 sent
+15:03:11.397063    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:03:11.397142     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2b57712ce15311ea Data len: 32)
+15:03:11.397158     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2b57712ce15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:11.397175     Info: trdp_mdcom.c:236 Using UDP MD session '2b57712ce15311ea'
+15:03:11.397181    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:03:11.397189    Debug: vos_mem.c:376 vos_memAlloc() 0x100671ad0, size    152
+15:03:11.397319     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:11.418586     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:11.418622    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:11.418691     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2b57712ce15311ea Data len: 33)
+15:03:11.418704    Debug: vos_mem.c:519 vos_memFree() 0x1007143c0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:11.418721     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:11.418730     Info: trdp_mdcom.c:3694 Using UDP MD session '2b57712ce15311ea'
+15:03:11.418735    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:11.418741    Debug: vos_mem.c:376 vos_memAlloc() 0x102904fb0, size    116
+15:03:11.418764     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:11.439890    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:11.439975    Debug: vos_mem.c:376 vos_memAlloc() 0x100524c00, size    264
+15:03:11.440071    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:11.440161     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2b57712ce15311ea Data len: 0)
+15:03:11.440303    Debug: vos_mem.c:519 vos_memFree() 0x100671ad0
+15:03:11.440315     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:11.440335     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2b57712ce15311ea'
+15:03:11.440346    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:11.440357    Debug: vos_mem.c:519 vos_memFree() 0x10066e720
+15:03:11.440384    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:11.440402    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:11.440415     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2b57712ce15311ea'
+15:03:11.440420    Debug: vos_mem.c:519 vos_memFree() 0x102904fb0
+15:03:11.440427    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:03:11.896046    Debug: vos_mem.c:376 vos_memAlloc() 0x100524d10, size    264
+15:03:11.896310     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:11.896405     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:11.896423    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:11.896440     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:11.896515    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:11.896539    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:11.896550    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:11.896559    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:11.896579    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:11.896594    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:11.896605    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:11.896612    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:11.896627     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2ba4a1d6e15311ea'
+15:03:11.896648    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    148
+15:03:11.896671     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request2 sent
+15:03:11.897255    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:11.897287     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2ba4a1d6e15311ea Data len: 32)
+15:03:11.897295     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2ba4a1d6e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:11.897308     Info: trdp_mdcom.c:236 Using UDP MD session '2ba4a1d6e15311ea'
+15:03:11.897313    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:11.897320    Debug: vos_mem.c:376 vos_memAlloc() 0x102904b70, size    152
+15:03:11.897326     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:11.918623     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:11.918654    Debug: vos_mem.c:376 vos_memAlloc() 0x10080ba00, size    1480
+15:03:11.918726     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2ba4a1d6e15311ea Data len: 33)
+15:03:11.918745    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:11.918763     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:11.918776     Info: trdp_mdcom.c:3694 Using UDP MD session '2ba4a1d6e15311ea'
+15:03:11.918784    Debug: vos_mem.c:519 vos_memFree() 0x10080ba00
+15:03:11.918799    Debug: vos_mem.c:376 vos_memAlloc() 0x100523420, size    116
+15:03:11.918809     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:11.938958    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:11.939120    Debug: vos_mem.c:376 vos_memAlloc() 0x100524e20, size    264
+15:03:11.939196    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:03:11.939971     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2ba4a1d6e15311ea Data len: 0)
+15:03:11.940036    Debug: vos_mem.c:519 vos_memFree() 0x102904b70
+15:03:11.940043     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:11.940090     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2ba4a1d6e15311ea'
+15:03:11.940096    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:03:11.940211    Debug: vos_mem.c:519 vos_memFree() 0x100524c00
+15:03:11.939845    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:11.940274    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:11.940281     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2ba4a1d6e15311ea'
+15:03:11.940285    Debug: vos_mem.c:519 vos_memFree() 0x100523420
+15:03:11.940289    Debug: vos_mem.c:519 vos_memFree() 0x100524d10
+15:03:12.400274    Debug: vos_mem.c:376 vos_memAlloc() 0x10066e720, size    264
+15:03:12.400372     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:12.400382     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:12.400386    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:12.400394     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:12.400456    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:12.400463    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:12.400468    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:12.400472    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:12.400477    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:12.400481    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:12.400485    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:12.400489    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:12.400495     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2bf18442e15311ea'
+15:03:12.400500    Debug: vos_mem.c:376 vos_memAlloc() 0x1005237a0, size    148
+15:03:12.400505     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request2 sent
+15:03:12.416057    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:12.416092     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2bf18442e15311ea Data len: 32)
+15:03:12.416100     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2bf18442e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:12.416163     Info: trdp_mdcom.c:236 Using UDP MD session '2bf18442e15311ea'
+15:03:12.416170    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:12.416176    Debug: vos_mem.c:376 vos_memAlloc() 0x102904b70, size    152
+15:03:12.416184     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:12.437146     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:12.437146    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:12.437210     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2bf18442e15311ea Data len: 33)
+15:03:12.437219    Debug: vos_mem.c:519 vos_memFree() 0x1005237a0
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:12.437230     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:12.437236     Info: trdp_mdcom.c:3694 Using UDP MD session '2bf18442e15311ea'
+15:03:12.437240    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:12.437249    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    116
+15:03:12.437428     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:12.457566    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:12.458122    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:12.458154    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:12.458154    Debug: vos_mem.c:376 vos_memAlloc() 0x100524c00, size    264
+15:03:12.458178    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:12.458178     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2bf18442e15311ea'
+15:03:12.458206    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:03:12.458212    Debug: vos_mem.c:519 vos_memFree() 0x10066e720
+15:03:12.458215     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2bf18442e15311ea Data len: 0)
+15:03:12.458221    Debug: vos_mem.c:519 vos_memFree() 0x102904b70
+15:03:12.458226     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:12.458332     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2bf18442e15311ea'
+15:03:12.458341    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:12.458345    Debug: vos_mem.c:519 vos_memFree() 0x100524e20
+15:03:12.904909    Debug: vos_mem.c:376 vos_memAlloc() 0x10070f510, size    264
+15:03:12.905046     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:12.905083     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:12.905094    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:12.905104     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:12.905157    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:12.905170    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:12.905177    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:12.905183    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:12.905189    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:12.905218    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:12.905266    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:12.905271    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:12.905289     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2c3e8ab2e15311ea'
+15:03:12.905300    Debug: vos_mem.c:376 vos_memAlloc() 0x102904b70, size    148
+15:03:12.905307     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request2 sent
+15:03:12.926063    Debug: vos_mem.c:376 vos_memAlloc() 0x101000000, size    1480
+15:03:12.926128     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2c3e8ab2e15311ea Data len: 32)
+15:03:12.926139     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2c3e8ab2e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:12.926156     Info: trdp_mdcom.c:236 Using UDP MD session '2c3e8ab2e15311ea'
+15:03:12.926164    Debug: vos_mem.c:519 vos_memFree() 0x101000000
+15:03:12.926171    Debug: vos_mem.c:376 vos_memAlloc() 0x1007143c0, size    152
+15:03:12.926178     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:12.947346     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:12.947443    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:12.947570     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2c3e8ab2e15311ea Data len: 33)
+15:03:12.947684    Debug: vos_mem.c:519 vos_memFree() 0x102904b70
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:12.947712     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:12.947721     Info: trdp_mdcom.c:3694 Using UDP MD session '2c3e8ab2e15311ea'
+15:03:12.947727    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:12.947735    Debug: vos_mem.c:376 vos_memAlloc() 0x100714200, size    116
+15:03:12.947782     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:12.968713    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:12.968872    Debug: vos_mem.c:376 vos_memAlloc() 0x100524d10, size    264
+15:03:12.969185    Debug: vos_mem.c:376 vos_memAlloc() 0x103014c00, size    1480
+15:03:12.969278     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2c3e8ab2e15311ea Data len: 0)
+15:03:12.969298    Debug: vos_mem.c:519 vos_memFree() 0x1007143c0
+15:03:12.969311     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:12.969339     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2c3e8ab2e15311ea'
+15:03:12.969354    Debug: vos_mem.c:519 vos_memFree() 0x103014c00
+15:03:12.969384    Debug: vos_mem.c:519 vos_memFree() 0x100524c00
+15:03:12.969420    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:12.969449    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:12.969462     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2c3e8ab2e15311ea'
+15:03:12.969472    Debug: vos_mem.c:519 vos_memFree() 0x100714200
+15:03:12.969481    Debug: vos_mem.c:519 vos_memFree() 0x10070f510
+15:03:13.406610    Debug: vos_mem.c:376 vos_memAlloc() 0x10066e720, size    264
+15:03:13.406676     Info: vos_sock.c:246 Send buffer limit = 65536
+15:03:13.406685     Info: vos_sock.c:259 Recv buffer limit = 786896
+15:03:13.406689    Debug: vos_sock.c:672 vos_sockOpenUDP: socket()=14 success
+15:03:13.406709     Info: vos_sock.c:1352 trying to bind to: 10.0.3.100:0
+15:03:13.406749    Debug: trdp_utils.c:118 ------- Socket usage -------
+15:03:13.406765    Debug: trdp_utils.c:125 iface[0].sock = 14
+15:03:13.406770    Debug: trdp_utils.c:126 iface[0].bindAddr = a000364
+15:03:13.406773    Debug: trdp_utils.c:129 iface[0].type = MD_UDP
+15:03:13.406775    Debug: trdp_utils.c:134 iface[0].sendParam.qos = 3, ttl = 64
+15:03:13.406778    Debug: trdp_utils.c:135 iface[0].rcvMostly = 0
+15:03:13.406780    Debug: trdp_utils.c:136 iface[0].usage = 1
+15:03:13.406782    Debug: trdp_utils.c:138 ----------------------------
+
+15:03:13.406796     Info: trdp_mdcom.c:256 Creating UDP MD caller session '2c8b10e4e15311ea'
+15:03:13.406804    Debug: vos_mem.c:376 vos_memAlloc() 0x102904b70, size    148
+15:03:13.406810     Info: trdp_mdcom.c:3219 MD sender element state = 2, msgType=Mr
+->> MD UDP Request2 sent
+15:03:13.421770    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:03:13.422037     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mr' UUID: 2c8b10e4e15311ea Data len: 32)
+15:03:13.422050     Info: trdp_mdcom.c:1755 Creating UDP MD replier session '2c8b10e4e15311ea'
+<<- Request received (Far out in the u...)
+->> Sending reply with query (But it is the st)
+15:03:13.422137     Info: trdp_mdcom.c:236 Using UDP MD session '2c8b10e4e15311ea'
+15:03:13.422251    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:03:13.422288    Debug: vos_mem.c:376 vos_memAlloc() 0x1029049b0, size    152
+15:03:13.422306     Info: trdp_mdcom.c:3219 MD sender element state = 4, msgType=Mq
+15:03:13.442585    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:03:13.442585     Info: trdp_mdcom.c:2369 Setting timeout for confirmation!
+15:03:13.442811     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mq' UUID: 2c8b10e4e15311ea Data len: 33)
+15:03:13.442833    Debug: vos_mem.c:519 vos_memFree() 0x102904b70
+<<- Reply received (But it is the st...)
+->> Sending confirmation
+15:03:13.442898     Info: trdp_mdcom.c:3647 MD TRDP_MSG_MC
+15:03:13.442907     Info: trdp_mdcom.c:3694 Using UDP MD session '2c8b10e4e15311ea'
+15:03:13.442913    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:03:13.442922    Debug: vos_mem.c:376 vos_memAlloc() 0x100523420, size    116
+15:03:13.442929     Info: trdp_mdcom.c:3219 MD sender element state = 5, msgType=Mc
+15:03:13.464069    Debug: trdp_utils.c:1480 Decrement the socket 14 usage = 1
+15:03:13.465136    Debug: vos_sock.c:748 vos_sockClose(14) okay
+15:03:13.465203    Debug: trdp_utils.c:1494 Closed socket 14
+15:03:13.465270     Info: trdp_mdcom.c:743 Freeing UDP MD caller session '2c8b10e4e15311ea'
+15:03:13.465277    Debug: vos_mem.c:519 vos_memFree() 0x100523420
+15:03:13.465284    Debug: vos_mem.c:519 vos_memFree() 0x10066e720
+15:03:13.465284    Debug: vos_mem.c:376 vos_memAlloc() 0x102905170, size    264
+15:03:13.465617    Debug: vos_mem.c:376 vos_memAlloc() 0x102000600, size    1480
+15:03:13.466046     Info: trdp_mdcom.c:2037 Received UDP MD packet (type: 'Mc' UUID: 2c8b10e4e15311ea Data len: 0)
+15:03:13.466393    Debug: vos_mem.c:519 vos_memFree() 0x1029049b0
+15:03:13.466502     Info: trdp_mdcom.c:646 Received Confirmation, session will be closed!
+<<- Confirmation received (status = 0)
+15:03:13.466546     Info: trdp_mdcom.c:769 Freeing MD UDP replier session '2c8b10e4e15311ea'
+15:03:13.466573    Debug: vos_mem.c:519 vos_memFree() 0x102000600
+15:03:13.466580    Debug: vos_mem.c:519 vos_memFree() 0x100524d10
+15:03:13.907666    Debug: trdp_utils.c:1480 Decrement the socket 11 usage = 1
+15:03:13.907992    Debug: vos_sock.c:748 vos_sockClose(11) okay
+15:03:13.908081    Debug: trdp_utils.c:1494 Closed socket 11
+15:03:13.908090    Debug: vos_mem.c:519 vos_memFree() 0x100523960
+
+-------- Cleaning up test16 ----------
+
+-----------  Success  ---------------
+--------- End of test16 --------------
+
+sc32 of '123456789' (seed = 0) is 0x6c9f84a8
+sc32 of '123456789' (seed = ffffffff) is 0xc683b9e5
+
+---- Start of test18 (XML test18) ---------
+
+interface label: enp0s3:1
+network ID     : 1
+host IP        : 0x0a00011e
+leader IP      : 0x00000000
+
+-------- Cleaning up test18 ----------
+
+-----------  Success  ---------------
+--------- End of test18 --------------
+
+All tests passed!
+Program ended with exit code: 0
