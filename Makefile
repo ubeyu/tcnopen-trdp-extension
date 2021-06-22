@@ -173,7 +173,7 @@ libtrdp:	outdir $(OUTDIR)/libtrdp.a
 
 libtrdpap: outdir $(OUTDIR)/libtrdpap.a
 
-example:	$(OUTDIR)/echoCallback $(OUTDIR)/receivePolling $(OUTDIR)/sendHello $(OUTDIR)/receiveHello $(OUTDIR)/sendData $(OUTDIR)/sourceFiltering $(OUTDIR)/sendTRDPMessage $(OUTDIR)/receiveTRDPMessage
+example:	$(OUTDIR)/echoCallback $(OUTDIR)/receivePolling $(OUTDIR)/sendHello $(OUTDIR)/receiveHello $(OUTDIR)/sendData $(OUTDIR)/sourceFiltering $(OUTDIR)/sendTRDPMessage $(OUTDIR)/receiveTRDPMessage $(OUTDIR)/trdpMulticast
 
 tsn:		$(OUTDIR)/sendTSN $(OUTDIR)/receiveTSN
 
@@ -254,7 +254,7 @@ $(OUTDIR)/sendHello:   sendHello.c  $(OUTDIR)/libtrdp.a
 			    -o $@
 			@$(STRIP) $@
 
-$(OUTDIR)/sendTRDPMessage: sendTRDPMessage.c  $(OUTDIR)/libtrdp.a
+$(OUTDIR)/sendTRDPMessage:   sendTRDPMessage.c  $(OUTDIR)/libtrdp.a
 			@$(ECHO) ' ### Building application $(@F)'
 			$(CC) example/sendTRDPMessage.c \
 			    -ltrdp \
@@ -265,6 +265,14 @@ $(OUTDIR)/sendTRDPMessage: sendTRDPMessage.c  $(OUTDIR)/libtrdp.a
 $(OUTDIR)/receiveTRDPMessage:   receiveTRDPMessage.c  $(OUTDIR)/libtrdp.a
 			@$(ECHO) ' ### Building application $(@F)'
 			$(CC) example/receiveTRDPMessage.c \
+			    -ltrdp \
+			    $(LDFLAGS) $(CFLAGS) $(INCLUDES) \
+			    -o $@
+			@$(STRIP) $@
+
+$(OUTDIR)/trdpMulticast:   trdpMulticast.c  $(OUTDIR)/libtrdp.a
+			@$(ECHO) ' ### Building application $(@F)'
+			$(CC) example/trdpMulticast.c \
 			    -ltrdp \
 			    $(LDFLAGS) $(CFLAGS) $(INCLUDES) \
 			    -o $@

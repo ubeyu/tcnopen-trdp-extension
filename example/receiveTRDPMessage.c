@@ -5,8 +5,9 @@
 /** 日  期   2020 12                                                 **/
 /******************************************************************************/
 
+
 /***********************************************************************************************************************
- * INCLUDES
+ * 引用库函数
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,7 +26,7 @@
 #include "trdpProc.h"
 
 /***********************************************************************************************************************
- * DEFINITIONS
+ * 宏定义
  */
 #define APP_VERSION     "1.4"
 
@@ -34,7 +35,7 @@
 #define PD_COMID        0
 #define PD_COMID_CYCLE  1000000             /* in us (1000000 = 1 sec) */
 
-/* We use dynamic memory    */
+/* 动态内存 */
 #define RESERVED_MEMORY  1000000
 
 //CHAR8 gBuffer[32];
@@ -62,7 +63,7 @@ char * terminalActiveprocess(char g)
 }
 
 /***********************************************************************************************************************
- * PROTOTYPES
+ * 函数原型
  */
 void dbgOut (void *,
              TRDP_LOG_T,
@@ -73,14 +74,14 @@ void dbgOut (void *,
 void usage (const char *);
 
 /**********************************************************************************************************************/
-/** callback routine for TRDP logging/error output
- *
- *  @param[in]        pRefCon          user supplied context pointer
- *  @param[in]        category         Log category (Error, Warning, Info etc.)
- *  @param[in]        pTime            pointer to NULL-terminated string of time stamp
- *  @param[in]        pFile            pointer to NULL-terminated string of source module
- *  @param[in]        LineNumber       line
- *  @param[in]        pMsgStr          pointer to NULL-terminated string
+/**  TRDP日志记录/错误输出的回调例程——参数说明
+ *  
+ *  @param[in]        pRefCon          用户提供的上下文指针
+ *  @param[in]        category         日志类别（错误、警告、信息等）
+ *  @param[in]        pTime            指向以 NULL 结尾的时间戳字符串的指针
+ *  @param[in]        pFile            指向以 NULL 结尾的源模块字符串的指针
+ *  @param[in]        LineNumber       线
+ *  @param[in]        pMsgStr          指向以 NULL 结尾的字符串的指针
  *  @retval         none
  */
 void dbgOut (
@@ -105,7 +106,7 @@ void dbgOut (
     }
 }
 
-/* Print a sensible usage message */
+/* 打印合理函数用法信息 */
 void usage (const char *appName)
 {
     printf("Usage of %s\n", appName);
@@ -120,16 +121,16 @@ void usage (const char *appName)
 
 
 /**********************************************************************************************************************/
-/** main entry
+/** 主函数入口——返回值说明
  *
- *  @retval         0        no error
- *  @retval         1        some error
+ *  @retval         0        没有错误
+ *  @retval         1        有错误
  */
 int main (int argc, char *argv[])
 {
     unsigned int    ip[4];
-    TRDP_APP_SESSION_T      appHandle; /*    Our identifier to the library instance    */
-    TRDP_SUB_T              subHandle; /*    Our identifier to the publication         */
+    TRDP_APP_SESSION_T      appHandle;    /*   库实例的标识符    */
+    TRDP_SUB_T              subHandle;    /*   自定义的标识符      */
     UINT32          comId = PD_COMID;
     TRDP_ERR_T err;
     TRDP_PD_CONFIG_T        pdConfiguration =
@@ -149,7 +150,7 @@ int main (int argc, char *argv[])
         switch (ch)
         {
            case 'o':
-           {    /*  read ip    */
+           {    /*  读取IP  */
                if (sscanf(optarg, "%u.%u.%u.%u",
                           &ip[3], &ip[2], &ip[1], &ip[0]) < 4)
                {
@@ -160,7 +161,7 @@ int main (int argc, char *argv[])
                break;
            }
            case 'm':
-           {    /*  read ip    */
+           {    /*  读取IP  */
                if (sscanf(optarg, "%u.%u.%u.%u",
                           &ip[3], &ip[2], &ip[1], &ip[0]) < 4)
                {
@@ -171,7 +172,7 @@ int main (int argc, char *argv[])
                break;
            }vos_printLog(VOS_LOG_USR, "%s\n", gBuffer);
            case 'c':
-           {    /*  read comId    */
+           {    /*  读取端口号  */
                if (sscanf(optarg, "%u",
                           &comId) < 1)
                {
@@ -180,7 +181,7 @@ int main (int argc, char *argv[])
                }
                break;
            }
-           case 'v':    /*  version */
+           case 'v':    /*  版本 */
                printf("%s: Version %s\t(%s - %s)\n",
                       argv[0], APP_VERSION, __DATE__, __TIME__);
                exit(0);
@@ -193,44 +194,44 @@ int main (int argc, char *argv[])
         }
     }
 
-    /*    Init the library  */
-    if (tlc_init(&dbgOut,                              /* no logging    */
+    /*   初始化库  */
+    if (tlc_init(&dbgOut,                              /*  无日志记录   */
                  NULL,
-                 &dynamicConfig) != TRDP_NO_ERR)    /* Use application supplied memory    */
+                 &dynamicConfig) != TRDP_NO_ERR)    /* 使用应用程序提供的内存  */
     {
         printf("Initialization error\n");
         return 1;
     }
 
-    /*    Open a session  */
+    /*   打开一个会话  */
     if (tlc_openSession(&appHandle,
-                        ownIP, 0,               /* use default IP address           */
-                        NULL,                   /* no Marshalling                   */
-                        &pdConfiguration, NULL, /* system defaults for PD and MD    */
+                        ownIP, 0,               /*   使用默认IP地址        */
+                        NULL,                   /*   禁止编组              */
+                        &pdConfiguration, NULL, /*   PD和MD的系统默认值     */
                         &processConfig) != TRDP_NO_ERR)
     {
         vos_printLogStr(VOS_LOG_USR, "Initialization error\n");
         return 1;
     }
 
-    /*    Subscribe to control PD        */
+    /*    订阅控制PD       */
 
     memset(gBuffer, 0, sizeof(gBuffer));
 
-    err = tlp_subscribe( appHandle,                 /*    our application identifier            */
-                         &subHandle,                /*    our subscription identifier           */
-                         NULL,                      /*    user reference                        */
-                         NULL,                      /*    callback functiom                     */
+    err = tlp_subscribe( appHandle,                 /*    自定义的应用程序标识符      */
+                         &subHandle,                /*    自定义的订阅标识符          */
+                         NULL,                      /*    用户参考号                 */
+                         NULL,                      /*    回调函数                   */
                          0u,
-                         comId,                     /*    ComID                                 */
-                         0,                         /*    etbTopoCnt: local consist only        */
-                         0,                         /*    opTopoCnt                             */
-                         VOS_INADDR_ANY, VOS_INADDR_ANY,    /*    Source IP filter              */
-                         dstIP,                     /*    Default destination    (or MC Group)  */
-                         TRDP_FLAGS_DEFAULT,        /*    TRDP flags                            */
-                         NULL,                      /*    default interface                    */
-                         PD_COMID_CYCLE * 3,        /*    Time out in us                        */
-                         TRDP_TO_SET_TO_ZERO        /*    delete invalid data on timeout        */
+                         comId,                     /*    端口号                     */
+                         0,                         /*    etbTopoCnt：仅本地组        */
+                         0,                         /*    opTopoCnt                  */
+                         VOS_INADDR_ANY, VOS_INADDR_ANY,    /*    源IP筛选器          */
+                         dstIP,                     /*    默认目的地（或MC组）         */
+                         TRDP_FLAGS_DEFAULT,        /*    TRDP标志                    */
+                         NULL,                      /*    默认接口                    */
+                         PD_COMID_CYCLE * 3,        /*    超时                        */
+                         TRDP_TO_SET_TO_ZERO        /*    超时时删除无效数据           */
                          );
 
     if (err != TRDP_NO_ERR)
@@ -241,11 +242,11 @@ int main (int argc, char *argv[])
     }
 
     /*
-     Finish the setup.
-     On non-high-performance targets, this is a no-op.
-     This call is necessary if HIGH_PERF_INDEXED is defined. It will create the internal index tables for faster access.
-     It should be called after the last publisher and subscriber has been added.
-     Maybe tlc_activateSession would be a better name.If HIGH_PERF_INDEXED is set, this call will create the internal index tables for fast telegram access
+        完成设置。
+        对于非高性能目标，这是不可行的。
+        如果定义了 HIGH_PERF_INDEXED，则此调用是必需的。它将创建内部索引表，以便更快地访问。
+        它应该在添加最后一个发布者和订阅者之后调用。
+        也许 tlc_activateSession 可能会有个更好的名字。如果设置了 HIGH_PERF_INDEXED，此调用将创建内部索引表，以便快速访问电报。
      */
 
     err = tlc_updateSession(appHandle);
@@ -257,7 +258,7 @@ int main (int argc, char *argv[])
     }
 
     /*
-     Enter the main processing loop.
+        进入主处理循环
      */
     while (1)
     {
@@ -268,23 +269,23 @@ int main (int argc, char *argv[])
         const TRDP_TIME_T   min_tv  = {0, TRDP_PROCESS_DEFAULT_CYCLE_TIME};
 
         /*
-         Prepare the file descriptor set for the select call.
-         Additional descriptors can be added here.
+            为select调用准备文件描述符集。
+            可以在此处添加其他描述符。
          */
         FD_ZERO(&rfds);
 
         /*
-         Compute the min. timeout value for select.
-         This way we can guarantee that PDs are sent in time
-         with minimum CPU load and minimum jitter.
+            计算select的最小超时值。
+            这样我们可以保证PDs及时发送。
+            以最小的CPU负载和最小的抖动。
          */
         tlc_getInterval(appHandle, &tv, &rfds, &noDesc);
 
         /*
-         The wait time for select must consider cycle times and timeouts of
-         the PD packets received or sent.
-         If we need to poll something faster than the lowest PD cycle,
-         we need to set the maximum time out our self.
+            select的等待时间必须考虑
+            接收或发送的PD数据包。
+            如果我们需要比最低PD周期更快的投票，
+            我们需要给自己设定最长的时间。
          */
         if (vos_cmpTime(&tv, &max_tv) > 0)
         {
@@ -292,7 +293,7 @@ int main (int argc, char *argv[])
         }
 
         /*
-         Prevent from running too fast, if we're just waiting for packets (default min. time is 10ms).
+            防止运行太快，如果我们只是等待数据包（默认最小时间是10毫秒）。
         */
         if (vos_cmpTime(&tv, &min_tv) < 0)
         {
@@ -300,7 +301,7 @@ int main (int argc, char *argv[])
         }
 
         /*
-         Alternatively we could call select() with a NULL pointer - this would block this loop:
+            或者，我们可以使用空指针调用select（），这将阻止此循环：
             if (vos_cmpTime(&tv, &min_tv) < 0)
             {
                 rv = vos_select(noDesc + 1, &rfds, NULL, NULL, NULL);
@@ -308,23 +309,21 @@ int main (int argc, char *argv[])
         */
 
         /*
-         Select() will wait for ready descriptors or time out,
-         what ever comes first.
+            select（）将等待就绪描述符或超时，
+            什么事先发生。
          */
         rv = vos_select(noDesc + 1, &rfds, NULL, NULL, &tv);
 
         /*
-         Check for overdue PDs (sending and receiving)
-         Send any pending PDs if it's time...
-         Detect missing PDs...
-         'rv' will be updated to show the handled events, if there are
-         more than one...
-         The callback function will be called from within the tlc_process
-         function (in it's context and thread)!
+            检查过期的PDs（发送和接收）
+            如果是过期的，发送任何挂起的PDs...
+            检测丢失的PDs...
+            “rv”将更新以显示已处理的事件（如果有不止一个...）
+            回调函数将从 tlc_process 函数中调用（在它的上下文和线程中）
          */
         (void) tlc_process(appHandle, &rfds, &rv);
 
-        /* Handle other ready descriptors... */
+        /* 处理其他就绪描述符... */
         if (rv > 0)
         {
             vos_printLogStr(VOS_LOG_USR, "other descriptors were ready\n");
@@ -336,9 +335,9 @@ int main (int argc, char *argv[])
         }
 
         /*
-         Get the subscribed telegram.
-         The only supported packet flag is TRDP_FLAGS_MARSHALL, which would automatically de-marshall the telegram.
-         We do not use it here.
+            收到订阅的电报。
+            唯一受支持的数据包标志是TRDP_FLAGS_MARSHALL，它将自动对电报进行 de-marshall 处理。
+            这里我们不用。
          */
 
         receivedSize = sizeof(gBuffer);
@@ -354,43 +353,7 @@ int main (int argc, char *argv[])
             vos_printLog(VOS_LOG_USR, "Type = %c%c, \n", myPDInfo.msgType >> 8, myPDInfo.msgType & 0xFF);
             vos_printLog(VOS_LOG_USR, "Seq  = %u, \n", myPDInfo.seqCount);
             vos_printLog(VOS_LOG_USR, "with %d Bytes:\n", receivedSize);
-            /*vos_printLog(VOS_LOG_USR, "gBuffer0-7:   %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx\n",
-                   gBuffer[0], gBuffer[1], gBuffer[2], gBuffer[3],
-                   gBuffer[4], gBuffer[5], gBuffer[6], gBuffer[7]);
-            vos_printLog(VOS_LOG_USR, "gBuffer8-15:   %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx %02hhx\n",
-                   gBuffer[8], gBuffer[9], gBuffer[10], gBuffer[11],
-                   gBuffer[12], gBuffer[13], gBuffer[14], gBuffer[15]);*/
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[0]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[1]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[2]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[3]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[4]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[5]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[6]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[7]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[8]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[9]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[10]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[11]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[12]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[13]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[14]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[15]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[16]);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[17]);
-            //vos_printLog(VOS_LOG_USR, "gBuffer0:   %d\n",gBuffer[0] && 0x80);
-            //vos_printLog(VOS_LOG_USR, "gBuffer0:   %d\n",gBuffer[0] && 0x40);
-            //vos_printLog(VOS_LOG_USR, "gBuffer0:   %d\n",gBuffer[0] - 0x80);
-            //vos_printLog(VOS_LOG_USR, "gBuffer0:   %d\n",gBuffer[0] - 0x40);
-            vos_printLog(VOS_LOG_USR, "\n");
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[0] & 0x80);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[0] & 0x40);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[1] & 0x20);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[1] & 0x08);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[1] & 0x04);
-            vos_printLog(VOS_LOG_USR, "gBuffer0:   %02hhx\n",gBuffer[1] & 0x01);
 
-            char tmp1 =  gBuffer[0];
             if(gBuffer[0] & 0x80 != 0) vos_printLogStr(VOS_LOG_USR,"TC1占有\n");
             if(gBuffer[0] & 0x40 != 0) vos_printLogStr(VOS_LOG_USR,"TC2占有\n");
             if(gBuffer[1] & 0x40 != 0) vos_printLogStr(VOS_LOG_USR,"集控开左门\n");
@@ -399,18 +362,8 @@ int main (int argc, char *argv[])
             if(gBuffer[1] & 0x04 != 0) vos_printLogStr(VOS_LOG_USR,"集控关右门\n");
             if(gBuffer[1] & 0x01 != 0) vos_printLogStr(VOS_LOG_USR,"限电模式开\n");
             vos_printLog(VOS_LOG_USR, "门关闭延时时间为 %.1f s\n", (gBuffer[2]*16+gBuffer[3])*0.1);
-            vos_printLog(VOS_LOG_USR, "门打开延时时间为 %.1f s\n", (gBuffer[4]*16+gBuffer[5])*0.1);
-            vos_printLog(VOS_LOG_USR, "障碍物检测延时时间为 %.1f s\n", (gBuffer[6]*16+gBuffer[7])*0.1);
-            vos_printLog(VOS_LOG_USR, "开门过程持续时间为 %.1f s\n", (gBuffer[8]*16+gBuffer[9])*0.1);
-            vos_printLog(VOS_LOG_USR, "关门过程持续时间为 %.1f s\n", (gBuffer[10]*16+gBuffer[11])*0.1);
+            vos_printLog(VOS_LOG_USR, "关闭过程中障碍物探测的关闭次数为 %d 次\n", (gBuffer[4]*16+gBuffer[5]));
 
-            vos_printLog(VOS_LOG_USR, "关闭过程中障碍物探测的关闭次数为 %d 次\n", (gBuffer[12]*16+gBuffer[13]));
-            vos_printLog(VOS_LOG_USR, "开启过程中障碍物探测的开启次数为 %d 次\n", (gBuffer[14]*16+gBuffer[15]));
-            vos_printLog(VOS_LOG_USR, "关闭过程中障碍物探测的重新开启距离为 %.1f mm\n", (gBuffer[16]*16+gBuffer[17])*100);
-        
-            //vos_printLogStr(VOS_LOG_USR,message0);
-            //vos_printLog(VOS_LOG_USR, "%c\n", terminalActiveprocess(gBuffer[0]));
-            vos_printLog(VOS_LOG_USR, "%s\n", gBuffer);
         }
         else if (TRDP_NO_ERR == err)
         {
@@ -433,7 +386,7 @@ int main (int argc, char *argv[])
     }
 
     /*
-     *    We always clean up behind us!
+     *   清理缓存
      */
     tlp_unsubscribe(appHandle, subHandle);
     tlc_closeSession(appHandle);

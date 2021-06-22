@@ -16,8 +16,8 @@
  *
  * $Id: trdp-pd-test.c 2205 2020-08-20 12:20:43Z bloehr $
  *
- *      A� 2020-05-04: Ticket #330: Extend TRDP_PDTest with TSN support
- *      A� 2019-11-11: Ticket #290: Add support for Virtualization on Windows
+ *      A� 2020-05-04: Ticket #330: Extend TRDP_PDTest with TSN support
+ *      A� 2019-11-11: Ticket #290: Add support for Virtualization on Windows
  *      BL 2018-06-20: Ticket #184: Building with VS 2015: WIN64 and Windows threads (SOCKET instead of INT32)
  *      BL 2018-03-06: Ticket #101 Optional callback function on PD send
  *      BL 2017-06-30: Compiler warnings, local prototypes added
@@ -764,13 +764,14 @@ static void process_data()
                 if (o < p->size)
                 {
                     snprintf((char *) p->data + o, p->size - o,
-                        "<%s/%d.%d.%d.%d->%d.%d.%d.%d/%dms/%db:%d>",
+                        "<%s/%d.%d.%d.%d->%d.%d.%d.%d/%dms/%db:%d,Data: %s,%s>",
                         p->type == PORT_PUSH ? "Pd" : "Pp",
                         (p->src >> 24) & 0xff, (p->src >> 16) & 0xff,
                         (p->src >> 8) & 0xff, p->src & 0xff,
                         (p->dst >> 24) & 0xff, (p->dst >> 16) & 0xff,
                         (p->dst >> 8) & 0xff, p->dst & 0xff,
-                        p->cycle / 1000, p->size, cycle);
+                        p->cycle / 1000, p->size, cycle,
+                        "TC1占有","TC1占有");
                 }
             }
             else
@@ -799,13 +800,15 @@ static void process_data()
             memset(p->data, '_', p->size);
             if (o < p->size)
             {
-                snprintf((char *) p->data + o, p->size - o,
-                    "<Pr/%d.%d.%d.%d->%d.%d.%d.%d/%dms/%db:%d>",
-                    (p->src >> 24) & 0xff, (p->src >> 16) & 0xff,
-                    (p->src >> 8) & 0xff, p->src & 0xff,
-                    (p->dst >> 24) & 0xff, (p->dst >> 16) & 0xff,
-                    (p->dst >> 8) & 0xff, p->dst & 0xff,
-                    p->cycle / 1000, p->size, cycle);
+               snprintf((char *) p->data + o, p->size - o,
+                        "<%s/%d.%d.%d.%d->%d.%d.%d.%d/%dms/%db:%d,Data: %s,%s>",
+                        p->type == PORT_PUSH ? "Pd" : "Pp",
+                        (p->src >> 24) & 0xff, (p->src >> 16) & 0xff,
+                        (p->src >> 8) & 0xff, p->src & 0xff,
+                        (p->dst >> 24) & 0xff, (p->dst >> 16) & 0xff,
+                        (p->dst >> 8) & 0xff, p->dst & 0xff,
+                        p->cycle / 1000, p->size, cycle,
+                        "TC1占有","TC1占有");
             }
 
             p->err = tlp_request(apph, ports[p->link].sh, 0u, p->comid, 0u, 0u,

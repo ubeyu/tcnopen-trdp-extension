@@ -1,0 +1,81 @@
+The system is: Windows - 10.0.18363 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.26.28806 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.26.28806.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "E:/My Documents/快速访问/桌面/trdpchunjie4/trdp20200114/spy/src/trdp_spy/out/build/x64-Debug (默认值)/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: E:/Program Files/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.26.28801/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.26.28806 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.26.28806.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "E:/My Documents/快速访问/桌面/trdpchunjie4/trdp20200114/spy/src/trdp_spy/out/build/x64-Debug (默认值)/CMakeFiles/3.17.20032601-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: E:/My Documents/快速访问/桌面/trdpchunjie4/trdp20200114/spy/src/trdp_spy/out/build/x64-Debug (默认值)/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:/Program Files/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_93026 && [1/2] Building C object CMakeFiles\cmTC_93026.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_93026.exe
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: E:/My Documents/快速访问/桌面/trdpchunjie4/trdp20200114/spy/src/trdp_spy/out/build/x64-Debug (默认值)/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:/Program Files/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_9bd21 && [1/2] Building C object CMakeFiles\cmTC_9bd21.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_9bd21.exe
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: E:/My Documents/快速访问/桌面/trdpchunjie4/trdp20200114/spy/src/trdp_spy/out/build/x64-Debug (默认值)/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:/Program Files/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_1dab3 && [1/2] Building CXX object CMakeFiles\cmTC_1dab3.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_1dab3.exe
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: E:/My Documents/快速访问/桌面/trdpchunjie4/trdp20200114/spy/src/trdp_spy/out/build/x64-Debug (默认值)/CMakeFiles/CMakeTmp
+
+Run Build Command(s):E:/Program Files/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_6f739 && [1/2] Building CXX object CMakeFiles\cmTC_6f739.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_6f739.exe
+
+
+
