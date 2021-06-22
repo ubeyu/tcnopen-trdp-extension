@@ -15,8 +15,8 @@ For further information:
 
 <table>
     <tr>
-        <td><center><img src="../notebook-cs/images/4.车载网管交换机/仿真平台结构框图.png"></center></td>
-        <td><center><img src="../notebook-cs/images/4.车载网管交换机/仿真平台实体结构.png"></center></td>
+        <td><center><img src="https://github.com/wanghaoyang949/notebook-cs/blob/master/images/4.%E8%BD%A6%E8%BD%BD%E7%BD%91%E7%AE%A1%E4%BA%A4%E6%8D%A2%E6%9C%BA/%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%E7%BB%93%E6%9E%84%E6%A1%86%E5%9B%BE.png"></center></td>
+        <td><center><img src="https://github.com/wanghaoyang949/notebook-cs/blob/master/images/4.%E8%BD%A6%E8%BD%BD%E7%BD%91%E7%AE%A1%E4%BA%A4%E6%8D%A2%E6%9C%BA/%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%E5%AE%9E%E4%BD%93%E7%BB%93%E6%9E%84.png"></center></td>
     </tr>
 </table>
 
