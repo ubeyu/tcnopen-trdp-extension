@@ -15,7 +15,8 @@ For further information:
 
 <table>
     <tr>
-        <td ><center><img src="../notebook-cs/blob/master/images/4.车载网管交换机/仿真平台结构框图.png"></center></td>
+        <td><center><img src="../notebook-cs/images/4.车载网管交换机/仿真平台结构框图.png"></center></td>
+        <td><center><img src="../notebook-cs/images/4.车载网管交换机/仿真平台实体结构.png"></center></td>
     </tr>
 </table>
 
