@@ -16,10 +16,16 @@ For further information:
 <table>
     <tr>
         <td><center><img src="https://github.com/wanghaoyang949/notebook-cs/blob/master/images/4.%E8%BD%A6%E8%BD%BD%E7%BD%91%E7%AE%A1%E4%BA%A4%E6%8D%A2%E6%9C%BA/%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%E7%BB%93%E6%9E%84%E6%A1%86%E5%9B%BE.png"></center></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
         <td><center><img src="https://github.com/wanghaoyang949/notebook-cs/blob/master/images/4.%E8%BD%A6%E8%BD%BD%E7%BD%91%E7%AE%A1%E4%BA%A4%E6%8D%A2%E6%9C%BA/%E4%BB%BF%E7%9C%9F%E5%B9%B3%E5%8F%B0%E5%AE%9E%E4%BD%93%E7%BB%93%E6%9E%84.png"></center></td>
     </tr>
 </table>
 
+    
 ### 协议扩展
 #### 1.2020/12/30 空调系统和门控系统的协议添加完毕；
 #### 2.2021/03/21 所有设备的通信协议结构体定义完毕。
