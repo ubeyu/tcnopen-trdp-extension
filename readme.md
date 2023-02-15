@@ -38,3 +38,4 @@ For further information:
 
 * 'TCN-TRDP2-D-BOM-011-31 TRDP USER'S MANUAL'(https://www.cooperationtool.eu/tcnopen/goto.aspx?p=TCNOPEN&doc=e8a3340b-249b-49b6-b39a-41e780787c0d)
 
+注意：已毕业，项目已停止维护，有需要沟通请留言，偶尔回复~
